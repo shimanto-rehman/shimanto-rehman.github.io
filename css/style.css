@@ -1391,21 +1391,14 @@ a.effect-shine:hover {
 }
 
 .moving-zone {
-    position: absolute;
-    align-items: center;
-    perspective: 800px;
-    top: 20%;
-    right: 40%;
+    perspective: 800px;    
 }
 
 .popup {
-    position: absolute;
-    width: 400px;
     cursor: pointer;
     transform-style: preserve-3d;
 }
 .popup:before {
-    position: absolute;
     transform: translateZ(-100px);
 }
 
@@ -1413,7 +1406,6 @@ a.effect-shine:hover {
     width: 100%;
     border-radius: 50%;
     border: 10px solid transparent;
-    text-align: center;
     transform: translateZ(15px);
 }
 
