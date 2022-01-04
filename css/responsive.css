@@ -208,6 +208,10 @@
         padding: 0.5rem;
     }
 
+    .menu-nav {
+        padding-top: 170px !important;
+    }
+
     .about-section .about-img .img-box {
         max-width: 80%;
         margin: auto;
