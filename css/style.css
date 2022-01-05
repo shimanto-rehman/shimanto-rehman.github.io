@@ -3787,114 +3787,100 @@ a.effect-shine:hover {
 }
 
 
-
-#wrapper {
-    position: relative;
-    height: 100vh;
-    background: #000;
-    font-family: 'Comfortaa', cursive;
-  }
-  
-  #canvas_container {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 0;
-  }
-  
-  canvas {
-    display: block;
-  }
-  
-  .text {
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.81);
-    font-size: 1.6rem;
-    line-height: 1.5;
-    user-select: none;
-    overflow: hidden;
-    display: flex;
-    align-items:center;
-  }
-  
-  .text span {
-    color: #e7aa27;
-  }
-  
-  .text .quoteText {
-    width: 85%;
-    margin: 0 auto;
-  }
-  
-  .text .quoteText span {
-    font-weight: 700;
-  }
-  
-  .clickInfo {
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    top: -80px;
-    z-index: 11;
-    cursor: pointer;
-    color: #F9B31C;
-    background-color: rgba(23, 23, 23, 0.9);
-    padding: 10px 0;
-    font-size: 20px;
-  }
-  
-  .btn {
-    position: absolute;
-    bottom: 5%;
-    right: 0px;
-    transform: translateX(-50%);
-    border: 1px solid white;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    padding: 0.5rem 0.7em;
-    background: transparent;
-    color: #F9B31C;
-    -webkit-font-smoothing: antialiased;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all .3s;
-    z-index: 11;
-  }
-  
-  .btn_works {
-    left: 100px;
-    right: unset;
-    text-decoration: none;
-  }
-  
-  .btn:hover {
-    background: #ffffff;
-    color: #2a2b2f;
-  }
-  
-  @media only screen and (max-width:815px) {
-    .text {
-      font-size: 1.2rem;
-    }
-  
-    .text span {
-      font-size: 0.8rem !important;
-    }
-  
-    .clickInfo {
-      font-size: 1rem;
-    }
-  }
-
+/*--------------------------------------------- Birthday countdown --------------------------------------------*/
+ 
+ .birthday{
+ }
+ .title-ctd {
+	 transform: translateX(-50%);
+	 font-size: 24px;
+	 color: var(--text-black-900);
+     text-transform: uppercase;
+     font-weight: 700;
+}
+ .container-ctd {
+	 transform: translate(-50%, -50%);
+     transform: scale(0.7);
+     align-items: center;
+}
+ .cake {
+     width: 250px;
+	 background-color: #745a4a;
+	 border-radius: 100%;
+	 margin-bottom: 120px;
+     align-items: center;
+     left: -50%;
+     z-index: 11;
+	 box-shadow: 0 4px 0 #6b5344, 0 8px 0 #6b5344, 0 12px 0 #6b5344, 0 16px 0 #6b5344, 0 20px 0 #6b5344, 0 24px 0 #6b5344, 0 28px 0 #6b5344, 0 32px 0 #e76868, 0 36px 0 #e76868, 0 40px 0 #f8ecc9, 0 44px 0 #f8ecc9, 0 48px 0 #f8ecc9, 0 52px 0 #f8ecc9, 0 56px 0 #6b5344, 0 60px 0 #6b5344, 0 64px 0 #6b5344, 0 68px 0 #6b5344, 0 72px 0 #6b5344, 0 76px 0 #6b5344, 0 80px 0 #6b5344;
+}
+ .cake:before {
+	 width: 250px;
+	 height: 50px;
+	 border-radius: 100%;
+	 background: #fff;
+	 box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.1);
+	 z-index: -10000;
+}
+ .cake__candle {
+	 transform: translateX(-50%);
+	 width: 5px;
+	 height: 40px;
+	 background-image: repeating-linear-gradient(-45deg, white, white 5px, #e76868 5px, #e76868 10px);
+}
+ .cake__candle:before {
+	 content: '';
+	 top: -20px;
+	 left: -4px;
+	 width: 15px;
+	 height: 15px;
+	 background: orange;
+	 border-radius: 0 100px 60px 100px;
+	 transform: rotate(40deg);
+	 animation: 0.3s flicker infinite ease;
+}
+ .cake__candle:after {
+	 content: '';
+	 width: 5px;
+	 height: 65px;
+	 background-color: black;
+	 border-radius: 15px 5px 5px 0;
+	 opacity: 0.2;
+	 transform: rotate(-80deg);
+}
+ .clock {
+	 display: flex;
+	 justify-content: space-between;
+     text-align: center;
+     align-items: center;
+	 transform: translateX(-50%);
+	 max-width: 500px;
+	 width: 100%;
+     padding-bottom: 10%;  
+     text-transform: uppercase;
+     font-weight: 700;
+}
+ .clock__days, .clock__hours, .clock__minutes, .clock__seconds {
+	 font-size: 18px;
+	 font-weight: 300;
+	 color: var(--text-black-600);
+}
+ .clock__days span, .clock__hours span, .clock__minutes span, .clock__seconds span {
+	 font-size: 60px;
+	 font-weight: 700;
+	 color: var(--text-black-900);
+}
+ @keyframes flicker {
+	 0% {
+		 transform: rotate(45deg);
+	}
+	 50% {
+		 transform: rotate(40deg);
+	}
+	 75% {
+		 transform: rotate(45deg);
+	}
+	 100% {
+		 transform: rotate(48deg);
+	}
+}
+ 
