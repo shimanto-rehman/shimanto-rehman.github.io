@@ -125,10 +125,11 @@
         left: -60px;
     }
 
-    .contact-section .input-group .input-control ::after{
-    background-color: transparent;
+    .contact-section .input-group .input-control ::after {
+        background-color: transparent;
     }
-    .contact-section .mailan{
+
+    .contact-section .mailan {
         padding-bottom: 30px;
     }
 
@@ -180,9 +181,30 @@
     .nav-menu.open .hover-in-shadow:hover::after {
         box-shadow: inset 0 0 4px 4px rgba(0, 0, 0, 0.23);
     }
+
     .nav-menu ul li a {
         font-size: 19px;
         padding: 5px 15px;
+    }
+
+    .about-section .birthday .title-ctd h1 {
+        font-size: 18px;
+    }
+
+    .container-ctd {
+        transform: scale(0.6);
+    }
+
+    .clock {
+        max-width: 350px;
+    }
+
+    .clock__days span, .clock__hours span, .clock__minutes span, .clock__seconds span {
+        font-size: 35px;
+    }
+
+    .clock__days, .clock__hours, .clock__minutes, .clock__seconds {
+        font-size: 15px;
     }
 
 }
@@ -257,19 +279,23 @@
     .testimonial-section .testi-box {
         max-width: 510px;
     }
+
     .nav-menu .portrait {
         width: 140px;
         height: 140px;
         background: url(https://i.imgur.com/xX7vwOC.jpg?1) center;
     }
+
     .nav-menu ul li a {
         font-size: 15px;
         padding: 5px 15px;
     }
-    .contact-section .input-group .input-control{
-        background: transparent!important;
+
+    .contact-section .input-group .input-control {
+        background: transparent !important;
         font-size: 12px;
     }
+
     input:-internal-autofill-selected {
         color: transparent !important;
     }
@@ -283,11 +309,12 @@
     .testimonial-section .testi-box {
         max-width: 470px;
     }
+
     .about-section .about-info p {
         font-size: 12px;
         font-weight: 700;
-    }    
-  
+    }
+
 }
 
 @media(max-width: 454px) {
@@ -298,14 +325,32 @@
     .testimonial-section .testi-box {
         max-width: 420px;
     }
-    .letter-image{
+
+    .letter-image {
         transform: scale(0.7);
         text-align: center;
         top: 20%;
         left: 26%;
     }
-    .contact-section .mailan{
+
+    .contact-section .mailan {
         padding-bottom: 0px;
+    }
+
+    .about-section .birthday .title-ctd h1{
+        font-size: 18px;
+    }
+    .container-ctd {
+        transform: scale(0.6);
+    }
+    .clock{
+        max-width: 330px;
+    }
+    .clock__days span, .clock__hours span, .clock__minutes span, .clock__seconds span {
+        font-size: 27px;
+    }
+    .clock__days, .clock__hours, .clock__minutes, .clock__seconds {
+        font-size: 12px;
     }
 }
 
@@ -343,6 +388,7 @@
     .testimonial-section .testi-box {
         max-width: 280px;
     }
+
     .nav-menu ul li a {
         font-size: 14px;
     }
@@ -386,25 +432,44 @@
     .testi-profile {
         width: 200px;
     }
+
     .nav-menu .portrait {
         width: 130px;
         height: 130px;
         background: url(https://i.imgur.com/xX7vwOC.jpg?1) center;
-      }
+    }
+
     .nav-menu ul li a {
         font-size: 12px;
         padding: 5px 15px;
     }
-    .letter-image{
+
+    .letter-image {
         top: 20%;
         left: 23%;
     }
+    .about-section .birthday .title-ctd h1{
+        font-size: 16px;
+    }
+    .container-ctd {
+        transform: scale(0.55);
+    }
+    .clock{
+        max-width: 230px;
+    }
+    .clock__days span, .clock__hours span, .clock__minutes span, .clock__seconds span {
+        font-size: 22px;
+    }
+    .clock__days, .clock__hours, .clock__minutes, .clock__seconds {
+        font-size: 9px;
+    }
 }
+
 @media(max-width: 340px) {
-    .letter-image{
+    .letter-image {
         top: 20%;
         left: 21%;
-    }  
+    }
 }
 
 @media(max-width: 320px) {
@@ -433,7 +498,8 @@
         font-size: 9px;
         left: -40px;
     }
-    .letter-image{
+
+    .letter-image {
         top: 20%;
         left: 20%;
     }

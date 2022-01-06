@@ -3790,49 +3790,54 @@ a.effect-shine:hover {
 /*--------------------------------------------- Birthday countdown --------------------------------------------*/
  
  .birthday{
+     width: 100%;
+     align-items: center;
  }
- .title-ctd {
-	 transform: translateX(-50%);
-	 font-size: 24px;
+ .title-ctd{
+     width: 100%;
+ }
+ .about-section .birthday .title-ctd h1{
+	 font-size: 25px;
 	 color: var(--text-black-900);
-     text-transform: uppercase;
      font-weight: 700;
+     text-align: center;
+     padding-top: 5%;
+     padding-bottom: 5%;
+}
+ .about-section .birthday .title-ctd span{
+    color: var(--skin-color);
+    font-weight: 700;
 }
  .container-ctd {
-	 transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
      transform: scale(0.7);
-     align-items: center;
 }
  .cake {
+     display: flex;
+     justify-content: center;
      width: 250px;
 	 background-color: #745a4a;
 	 border-radius: 100%;
 	 margin-bottom: 120px;
-     align-items: center;
-     left: -50%;
      z-index: 11;
 	 box-shadow: 0 4px 0 #6b5344, 0 8px 0 #6b5344, 0 12px 0 #6b5344, 0 16px 0 #6b5344, 0 20px 0 #6b5344, 0 24px 0 #6b5344, 0 28px 0 #6b5344, 0 32px 0 #e76868, 0 36px 0 #e76868, 0 40px 0 #f8ecc9, 0 44px 0 #f8ecc9, 0 48px 0 #f8ecc9, 0 52px 0 #f8ecc9, 0 56px 0 #6b5344, 0 60px 0 #6b5344, 0 64px 0 #6b5344, 0 68px 0 #6b5344, 0 72px 0 #6b5344, 0 76px 0 #6b5344, 0 80px 0 #6b5344;
 }
- .cake:before {
-	 width: 250px;
-	 height: 50px;
-	 border-radius: 100%;
-	 background: #fff;
-	 box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.1);
-	 z-index: -10000;
-}
  .cake__candle {
-	 transform: translateX(-50%);
 	 width: 5px;
 	 height: 40px;
 	 background-image: repeating-linear-gradient(-45deg, white, white 5px, #e76868 5px, #e76868 10px);
+     position: relative;
+     top: -15px;
 }
  .cake__candle:before {
-	 content: '';
-	 top: -20px;
-	 left: -4px;
-	 width: 15px;
-	 height: 15px;
+     display: flex;
+     position: relative;
+	 content: '';    
+     top: -25px;
+     left: -8px;
+	 width: 20px;
+	 height: 20px;
 	 background: orange;
 	 border-radius: 0 100px 60px 100px;
 	 transform: rotate(40deg);
@@ -3840,19 +3845,25 @@ a.effect-shine:hover {
 }
  .cake__candle:after {
 	 content: '';
+     display: flex;
+     justify-content: center;
+     position: relative;
+     top: -25px;
+     left: -30px;
 	 width: 5px;
-	 height: 65px;
+	 height: 67px;
 	 background-color: black;
 	 border-radius: 15px 5px 5px 0;
 	 opacity: 0.2;
-	 transform: rotate(-80deg);
+	 transform: rotate(-250deg);
+}
+.countdown{
+    display: flex;
+    justify-content: center;
 }
  .clock {
 	 display: flex;
 	 justify-content: space-between;
-     text-align: center;
-     align-items: center;
-	 transform: translateX(-50%);
 	 max-width: 500px;
 	 width: 100%;
      padding-bottom: 10%;  
