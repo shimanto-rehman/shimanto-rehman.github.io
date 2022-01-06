@@ -520,19 +520,23 @@ img {
 
 @keyframes pulse {
     0% {
-      box-shadow: 0 0 0 0 rgba(211, 211, 211, 0.1);
+        box-shadow: 0 0 0 0 rgba(211, 211, 211, 0.1);
     }
+
     5% {
-      transform: scale(1.01);
+        transform: scale(1.01);
     }
+
     15% {
-      transform: scale(1);
+        transform: scale(1);
     }
+
     70% {
-      box-shadow: 0 0 0 30px rgba(168, 63, 57, 0);
+        box-shadow: 0 0 0 30px rgba(168, 63, 57, 0);
     }
+
     100% {
-      box-shadow: 0 0 0 60px rgba(168, 63, 57, 0);
+        box-shadow: 0 0 0 60px rgba(168, 63, 57, 0);
     }
 }
 
@@ -862,6 +866,7 @@ img {
 .nav-item:nth-child(6) {
     transition-delay: 0.6s;
 }
+
 .nav-item:nth-child(7) {
     transition-delay: 0.7s;
 }
@@ -1394,13 +1399,14 @@ a.effect-shine:hover {
 }
 
 .moving-zone {
-    perspective: 800px;    
+    perspective: 800px;
 }
 
 .popup {
     cursor: pointer;
     transform-style: preserve-3d;
 }
+
 .popup:before {
     transform: translateZ(-100px);
 }
@@ -1412,7 +1418,7 @@ a.effect-shine:hover {
     transform: translateZ(15px);
 }
 
-.home-section .social-tab .social-icon{
+.home-section .social-tab .social-icon {
     color: var(--text-black-600);
 }
 
@@ -2391,7 +2397,8 @@ a.effect-shine:hover {
     max-width: 100%;
     margin-top: 50px;
 }
-.contact-section .mailan{
+
+.contact-section .mailan {
     padding-bottom: 30px;
 }
 
@@ -3788,110 +3795,125 @@ a.effect-shine:hover {
 
 
 /*--------------------------------------------- Birthday countdown --------------------------------------------*/
- 
- .birthday{
-     width: 100%;
-     align-items: center;
- }
- .title-ctd{
-     width: 100%;
- }
- .about-section .birthday .title-ctd h1{
-	 font-size: 25px;
-	 color: var(--text-black-900);
-     font-weight: 700;
-     text-align: center;
-     padding-top: 5%;
-     padding-bottom: 5%;
+
+.birthday {
+    width: 100%;
+    align-items: center;
 }
- .about-section .birthday .title-ctd span{
+
+.title-ctd {
+    width: 100%;
+}
+
+.about-section .birthday .title-ctd h1 {
+    font-size: 25px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.about-section .birthday .title-ctd span {
     color: var(--skin-color);
     font-weight: 700;
 }
- .container-ctd {
+
+.container-ctd {
     display: flex;
     justify-content: center;
-     transform: scale(0.7);
+    transform: scale(0.7);
 }
- .cake {
-     display: flex;
-     justify-content: center;
-     width: 250px;
-	 background-color: #745a4a;
-	 border-radius: 100%;
-	 margin-bottom: 120px;
-     z-index: 11;
-	 box-shadow: 0 4px 0 #6b5344, 0 8px 0 #6b5344, 0 12px 0 #6b5344, 0 16px 0 #6b5344, 0 20px 0 #6b5344, 0 24px 0 #6b5344, 0 28px 0 #6b5344, 0 32px 0 #e76868, 0 36px 0 #e76868, 0 40px 0 #f8ecc9, 0 44px 0 #f8ecc9, 0 48px 0 #f8ecc9, 0 52px 0 #f8ecc9, 0 56px 0 #6b5344, 0 60px 0 #6b5344, 0 64px 0 #6b5344, 0 68px 0 #6b5344, 0 72px 0 #6b5344, 0 76px 0 #6b5344, 0 80px 0 #6b5344;
+
+.cake {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    background-color: #745a4a;
+    border-radius: 100%;
+    margin-bottom: 120px;
+    z-index: 11;
+    box-shadow: 0 4px 0 #6b5344, 0 8px 0 #6b5344, 0 12px 0 #6b5344, 0 16px 0 #6b5344, 0 20px 0 #6b5344, 0 24px 0 #6b5344, 0 28px 0 #6b5344, 0 32px 0 #e76868, 0 36px 0 #e76868, 0 40px 0 #f8ecc9, 0 44px 0 #f8ecc9, 0 48px 0 #f8ecc9, 0 52px 0 #f8ecc9, 0 56px 0 #6b5344, 0 60px 0 #6b5344, 0 64px 0 #6b5344, 0 68px 0 #6b5344, 0 72px 0 #6b5344, 0 76px 0 #6b5344, 0 80px 0 #6b5344;
 }
- .cake__candle {
-	 width: 5px;
-	 height: 40px;
-	 background-image: repeating-linear-gradient(-45deg, white, white 5px, #e76868 5px, #e76868 10px);
-     position: relative;
-     top: -15px;
+
+.cake__candle {
+    width: 5px;
+    height: 40px;
+    background-image: repeating-linear-gradient(-45deg, white, white 5px, #e76868 5px, #e76868 10px);
+    position: relative;
+    top: -15px;
 }
- .cake__candle:before {
-     display: flex;
-     position: relative;
-	 content: '';    
-     top: -25px;
-     left: -8px;
-	 width: 20px;
-	 height: 20px;
-	 background: orange;
-	 border-radius: 0 100px 60px 100px;
-	 transform: rotate(40deg);
-	 animation: 0.3s flicker infinite ease;
+
+.cake__candle:before {
+    display: flex;
+    position: relative;
+    content: '';
+    top: -25px;
+    left: -8px;
+    width: 20px;
+    height: 20px;
+    background: orange;
+    border-radius: 0 100px 60px 100px;
+    transform: rotate(40deg);
+    animation: 0.3s flicker infinite ease;
 }
- .cake__candle:after {
-	 content: '';
-     display: flex;
-     justify-content: center;
-     position: relative;
-     top: -25px;
-     left: -30px;
-	 width: 5px;
-	 height: 67px;
-	 background-color: black;
-	 border-radius: 15px 5px 5px 0;
-	 opacity: 0.2;
-	 transform: rotate(-250deg);
+
+.cake__candle:after {
+    content: '';
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -25px;
+    left: -30px;
+    width: 5px;
+    height: 67px;
+    background-color: black;
+    border-radius: 15px 5px 5px 0;
+    opacity: 0.2;
+    transform: rotate(-250deg);
 }
-.countdown{
+
+.countdown {
     display: flex;
     justify-content: center;
 }
- .clock {
-	 display: flex;
-	 justify-content: space-between;
-	 max-width: 500px;
-	 width: 100%;
-     padding-bottom: 10%;  
-     text-transform: uppercase;
-     font-weight: 700;
+
+.clock {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    width: 100%;
+    padding-bottom: 10%;
+    text-transform: uppercase;
+    font-weight: 700;
 }
- .clock__days, .clock__hours, .clock__minutes, .clock__seconds {
-	 font-size: 18px;
-	 font-weight: 300;
-	 color: var(--text-black-600);
+
+.clock__days, .clock__hours, .clock__minutes, .clock__seconds {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--text-black-600);
 }
- .clock__days span, .clock__hours span, .clock__minutes span, .clock__seconds span {
-	 font-size: 60px;
-	 font-weight: 700;
-	 color: var(--text-black-900);
+
+.clock__days span, .clock__hours span, .clock__minutes span, .clock__seconds span {
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--text-black-900);
 }
- @keyframes flicker {
-	 0% {
-		 transform: rotate(45deg);
-	}
-	 50% {
-		 transform: rotate(40deg);
-	}
-	 75% {
-		 transform: rotate(45deg);
-	}
-	 100% {
-		 transform: rotate(48deg);
-	}
+
+@keyframes flicker {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(40deg);
+    }
+
+    75% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(48deg);
+    }
 }
- 

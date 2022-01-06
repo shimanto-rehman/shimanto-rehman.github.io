@@ -337,18 +337,22 @@
         padding-bottom: 0px;
     }
 
-    .about-section .birthday .title-ctd h1{
+    .about-section .birthday .title-ctd h1 {
         font-size: 18px;
     }
+
     .container-ctd {
         transform: scale(0.6);
     }
-    .clock{
+
+    .clock {
         max-width: 330px;
     }
+
     .clock__days span, .clock__hours span, .clock__minutes span, .clock__seconds span {
         font-size: 27px;
     }
+
     .clock__days, .clock__hours, .clock__minutes, .clock__seconds {
         font-size: 12px;
     }
@@ -448,18 +452,23 @@
         top: 20%;
         left: 23%;
     }
-    .about-section .birthday .title-ctd h1{
+
+    .about-section .birthday .title-ctd h1 {
         font-size: 16px;
     }
+
     .container-ctd {
         transform: scale(0.55);
     }
-    .clock{
+
+    .clock {
         max-width: 230px;
     }
+
     .clock__days span, .clock__hours span, .clock__minutes span, .clock__seconds span {
         font-size: 22px;
     }
+
     .clock__days, .clock__hours, .clock__minutes, .clock__seconds {
         font-size: 9px;
     }
