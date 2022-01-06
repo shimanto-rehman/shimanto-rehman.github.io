@@ -24,8 +24,7 @@
   <link rel="stylesheet" type="text/css" href="css/style-switcher.css">
   <!-- Adding JQuery File into HTML by including CDN -->
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-  <script src="js/SplitTextPlugin.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 </head>
 
 <body class="dark">
@@ -61,8 +60,6 @@
               class="link-item effect-shine outer-shadow hover-in-shadow">SERVICES</a></li>
           <li class="nav-item"><a href="#portfolio"
               class="link-item effect-shine outer-shadow hover-in-shadow">PROJECTS</a></li>
-          <li class="nav-item"><a href="#motivation" class="link-item effect-shine outer-shadow hover-in-shadow">MY
-              MOTIVATIONS</a></li>
           <li class="nav-item"><a href="#testimonial"
               class="link-item effect-shine outer-shadow hover-in-shadow">TESTIMONIAL</a>
           </li>
@@ -79,7 +76,7 @@
   <!-- Navigation Menu Ends -->
 
   <!-- Home Section Starts -->
-  <section class="home-section section active fx-section" id="home" id="sec1">
+  <section class="home-section section active fx-section" id="home">
     <!-- Effect Wrap Starts -->
     <div class="effect-wrap">
       <div class="effect effect-1">
@@ -207,7 +204,7 @@
   </section>
   <!-- Home Section Ends -->
   <!-- About Section starts -->
-  <section class="about-section section fx-section" id="about" id="sec2">
+  <section class="about-section section fx-section" id="about">
     <!-- The Glowing Loader Starts -->
     <div class="effect-wrap">
       <div class="effect-7"></div>
@@ -309,7 +306,7 @@
       <!-- The Cat Ends -->
       <div class="row">
         <div class="about-img">
-          <div class="img-box inner-shadow">
+          <div class="img-box">
             <img src="about-pic-1.png" class="outer-shadow" alt="about-pic-1">
           </div>
           <!-- Social Links Starts -->
@@ -535,12 +532,46 @@
         </div>
       </div>
       <!-- Education Ends-->
+      <!--  Birthday Counter -->
+      <div class="row">
+        <div class="birthday">
+          <div class="title-ctd">
+            <h1>Countdown <span>Until</span> My Birthday</h1>
+          </div>
+          <div class="container-ctd">
+            <div class="cake">
+              <div class="cake__candle"></div>
+            </div>
+          </div>
+          <div class="countdown">
+            <div id="js-clock" class="clock">
+              <div class="clock__days">
+                <span id="js-days"></span>
+                <div>Days</div>
+              </div>
+              <div class="clock__hours">
+                <span id="js-hours"></span>
+                <div>Hours</div>
+              </div>
+              <div class="clock__minutes">
+                <span id="js-minutes"></span>
+                <div>Minutes</div>
+              </div>
+              <div class="clock__seconds">
+                <span id="js-seconds"></span>
+                <div>Seconds</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Birthday Counter Ends -->
     </div>
   </section>
   <!-- About Section Ends -->
 
   <!-- Service Section Starts -->
-  <section class="service-section section fx-section" id="services" id="sec3">
+  <section class="service-section section fx-section" id="services">
     <div class="container">
       <div class="row">
         <div class="section-title">
@@ -636,7 +667,7 @@
 
 
   <!-- Project Section Starts -->
-  <section class="portfolio-section section fx-section" id="portfolio" id="sec4">
+  <section class="portfolio-section section fx-section" id="portfolio">
     <div class="container">
       <div class="row">
         <div class="section-title">
@@ -954,27 +985,8 @@
   </div>
   <!-- Portfolio Pop-up Ends -->
 
-  <section class="motivation-section section fx-section" id="motivation" id="sec5">
-    <div id="wrapper">
-
-      <div id="canvas_container"></div>
-
-      <div class="text">
-        <p class="quoteText">“ Never memorize something that you can look
-          up.”<br><span style="font-style: italic; font-size: 1.4rem; color:#ED760D">#Stack Overflow</span></p>
-      </div>
-      <p class="clickInfo">click anywhere to start journey</p>
-
-      <img id="first" src="https://i.imgur.com/hDB2Egy.jpg" style="display:none;">
-
-      <a href="https://codepen.io/collection/DxkYzq" target="_blank" class="btn btn_works">My Works</a>
-      <button class="btn" id="fullscr">Go Fullscreen</button>
-
-    </div>
-  </section>
-
   <!-- Testimonial Section Starts -->
-  <section class="testimonial-section section fx-section" id="testimonial" id="sec6">
+  <section class="testimonial-section section fx-section" id="testimonial">
     <div class="container">
       <div class="row">
         <div class="section-title">
@@ -1034,7 +1046,7 @@
   <!-- Testimonial Section Ends -->
 
   <!-- Contact Section Starts -->
-  <section class="contact-section section fx-section" id="contact" id="sec7">
+  <section class="contact-section section fx-section" id="contact">
     <div class="container">
       <div class="row mailan">
         <div class="section-title">
@@ -1157,6 +1169,52 @@
   <!-- style switcher js -->
   <script src="js/style-switcher.js"></script>
   <script src="https://use.fontawesome.com/15d0f12843.js"></script>
+
+  <!-- Birthday Counter Js Codes(Babel Js Code) -->
+  <script type="text/babel">
+    function countdown(endDate) {
+      let days, hours, minutes, seconds;
+
+      endDate = new Date(endDate).getTime();
+
+      if (isNaN(endDate)) {
+        return;
+      }
+
+      setInterval(calculate, 1000);
+
+      function calculate() {
+        let startDate = new Date();
+        startDate = startDate.getTime();
+
+        let timeRemaining = parseInt((endDate - startDate) / 1000);
+
+        if (timeRemaining >= 0) {
+          days = parseInt(timeRemaining / 86400);
+          timeRemaining = (timeRemaining % 86400);
+
+          hours = parseInt(timeRemaining / 3600);
+          timeRemaining = (timeRemaining % 3600);
+
+          minutes = parseInt(timeRemaining / 60);
+          timeRemaining = (timeRemaining % 60);
+
+          seconds = parseInt(timeRemaining);
+
+          document.getElementById("js-days").innerHTML = parseInt(days, 10);
+          document.getElementById("js-hours").innerHTML = ("0" + hours).slice(-2);
+          document.getElementById("js-minutes").innerHTML = ("0" + minutes).slice(-2);
+          document.getElementById("js-seconds").innerHTML = ("0" + seconds).slice(-2);
+        } else {
+          return;
+        }
+      }
+    }
+
+    (function () {
+      countdown((new Date().getFullYear()) + '-06-17');
+    }());
+  </script>
 </body>
 
 </html>
