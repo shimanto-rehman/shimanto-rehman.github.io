@@ -4580,8 +4580,13 @@ a.effect-shine:hover {
     font-weight: 700;
 	text-align: center;	
 	user-select: none;
-	color: var(--skin-color);
     top:-10px;
+}
+#text1{
+    color: #ffffff;
+}
+#text2{
+    color: var(--skin-color);
 }
 #filters{
     height: 0px;
