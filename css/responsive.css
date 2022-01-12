@@ -314,6 +314,9 @@
         font-size: 12px;
         font-weight: 700;
     }
+    #container-about-title{
+        padding-bottom: 100px;
+    }
 
 }
 
@@ -355,6 +358,9 @@
 
     .clock__days, .clock__hours, .clock__minutes, .clock__seconds {
         font-size: 12px;
+    }
+    #text1, #text2 {
+        font-size: 30px;
     }
 }
 
