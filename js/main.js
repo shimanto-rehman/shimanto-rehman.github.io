@@ -345,8 +345,8 @@ window.addEventListener("load", () => {
 
 
 /* -------------------------------------------- 3D profile pic --------------------------------------------*/
-var moveForce = 10; // max popup movement in pixels
-var rotateForce = 10; // max popup rotation in deg
+var moveForce = 14; // max popup movement in pixels
+var rotateForce = 14; // max popup rotation in deg
 
 $(document).mousemove(function (e) {
     var docX = $(document).width();
