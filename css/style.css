@@ -4616,7 +4616,6 @@ a.effect-shine:hover {
     The animation is disabled because it can be CPU-consuming.
     Uncomment the next CSS line to re-enable it. 
     */
-    /* animation: burn 4s infinite; */
     display: flex;
     justify-content: space-between;
     width: 50px !important;
@@ -4668,7 +4667,7 @@ a.effect-shine:hover {
     box-shadow: 0 0 5vmin 3vmin #000a, inset -1vmin 0 1.5vmin #000;
     transform: scale(0.3);
   }
-  
+
   @keyframes burn {
     0%, 100% { border-radius: 5% 87% 45% 85%; width: 30vmin; }
     20% { border-radius: 5% 85% 49% 82%; }
