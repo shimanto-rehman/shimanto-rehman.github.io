@@ -1,4 +1,3 @@
-
 /* ----------------------------------------- Navigation Menu ----------------------------------------- */
 (() => {
 
@@ -21,6 +20,7 @@
         })
         bodyScrollingToggole();
     }
+
     function hideNavMenu() {
         navMenu.classList.remove("open");
         navOptions.classList.remove("open");
@@ -56,8 +56,7 @@
                     // Hide Nvigation Menu
                     hideNavMenu();
 
-                }
-                else {
+                } else {
                     let navItems = navMenu.querySelectorAll(".link-item");
                     navItems.forEach((item) => {
                         if (hash === item.hash) {
@@ -103,6 +102,7 @@ function bodyScrollingToggole() {
 /* --------------------------------------------- Typing about Info --------------------------------------------- */
 
 let textLength = 0;
+
 function type() {
     let text = 'Hello ! My name is Shimanto Rehman. Im a 4th year undergraduate student at SUST, Sylhet pursuing BSc in Computer Science and Engineering. Im a passionate learner whos always willing to learn and work across technologies and domains. I love to explore new technologies and leverage them to solve real-life problems. Apart from that I also love to guide and mentor newbies. Im currently into Web Development and working on my Data Structures and Algorithms.';
     let textChar = text.charAt(textLength++);
@@ -117,10 +117,10 @@ function type() {
     text = '';
 }
 
-document.getElementById("about-type").onclick = function () {
+document.getElementById("about-type").onclick = function() {
     type();
 };
-document.getElementById("about-type1").onclick = function () {
+document.getElementById("about-type1").onclick = function() {
     type();
 };
 
@@ -151,8 +151,7 @@ document.getElementById("about-type1").onclick = function () {
                 if (target === item.getAttribute("data-category") || target === 'all') {
                     item.classList.remove("hide");
                     item.classList.add("show");
-                }
-                else {
+                } else {
                     item.classList.remove("show");
                     item.classList.add("hide");
                 }
@@ -171,8 +170,7 @@ document.getElementById("about-type1").onclick = function () {
             if (screenshots.length === 1) {
                 prevBtn.style.display = "none";
                 nextBtn.style.display = "none";
-            }
-            else {
+            } else {
                 prevBtn.style.display = "block";
                 nextBtn.style.display = "block";
             }
@@ -194,6 +192,7 @@ document.getElementById("about-type1").onclick = function () {
         popup.classList.toggle("open");
         bodyScrollingToggole();
     }
+
     function popupSlideshow() {
         const imgSrc = screenshots[slideIndex];
         const popupImg = popup.querySelector(".pp-img");
@@ -208,24 +207,23 @@ document.getElementById("about-type1").onclick = function () {
     }
     // Next Slide
     nextBtn.addEventListener("click", () => {
-        if (slideIndex === screenshots.length - 1) {
-            slideIndex = 0;
-        }
-        else {
-            slideIndex++;
-        }
-        popupSlideshow();
-    })
-    // Prev Slide
+            if (slideIndex === screenshots.length - 1) {
+                slideIndex = 0;
+            } else {
+                slideIndex++;
+            }
+            popupSlideshow();
+        })
+        // Prev Slide
     prevBtn.addEventListener("click", () => {
         if (slideIndex === 0) {
             slideIndex = screenshots.length - 1;
-        }
-        else {
+        } else {
             slideIndex--;
         }
         popupSlideshow();
     })
+
     function popupDetails() {
         //if portfolio-item-details not exist
         if (!portfolioItems[itemIndex].querySelector(".portfolio-item-details")) {
@@ -250,14 +248,14 @@ document.getElementById("about-type1").onclick = function () {
     projectDetailsBtn.addEventListener("click", () => {
         popupDetailsToggle();
     })
+
     function popupDetailsToggle() {
         if (projectDetailsContainer.classList.contains("active")) {
             projectDetailsBtn.querySelector("i").classList.remove("fa-minus");
             projectDetailsBtn.querySelector("i").classList.add("fa-plus");
             projectDetailsContainer.classList.remove("active");
             projectDetailsContainer.style.maxHeight = 0 + "px";
-        }
-        else {
+        } else {
             projectDetailsBtn.querySelector("i").classList.remove("fa-plus");
             projectDetailsBtn.querySelector("i").classList.add("fa-minus");
             projectDetailsContainer.classList.add("active");
@@ -283,16 +281,15 @@ document.getElementById("about-type1").onclick = function () {
 
     // Set Width of All Slides
     slides.forEach((slide) => {
-        slide.style.width = slideWidth + "px";
-    })
-    // Set Width of slideContainer
+            slide.style.width = slideWidth + "px";
+        })
+        // Set Width of slideContainer
     sliderContainer.style.width = slideWidth * slides.length + "px";
 
     nextBtn.addEventListener("click", () => {
         if (slideIndex === slides.length - 1) {
             slideIndex = 0;
-        }
-        else {
+        } else {
             slideIndex++;
         }
         slider();
@@ -300,18 +297,18 @@ document.getElementById("about-type1").onclick = function () {
     prevBtn.addEventListener("click", () => {
         if (slideIndex === 0) {
             slideIndex = slides.length - 1;
-        }
-        else {
+        } else {
             slideIndex--;
         }
         slider();
     })
+
     function slider() {
         // Deactivate existing active Slides
         sliderContainer.querySelector(".testi-item.active").classList.remove("active");
         // Active New Slide
         slides[slideIndex].classList.add("active");
-        sliderContainer.style.marginLeft = - (slideWidth * slideIndex) + "px";
+        sliderContainer.style.marginLeft = -(slideWidth * slideIndex) + "px";
     }
     slider();
 })();
@@ -320,7 +317,6 @@ document.getElementById("about-type1").onclick = function () {
 
 
 /* ----------------------------------- Hide All Sections Except Active ------------------------------------ */
-
 (() => {
 
     const sections = document.querySelectorAll(".section");
@@ -348,7 +344,7 @@ window.addEventListener("load", () => {
 var moveForce = 14; // max popup movement in pixels
 var rotateForce = 14; // max popup rotation in deg
 
-$(document).mousemove(function (e) {
+$(document).mousemove(function(e) {
     var docX = $(document).width();
     var docY = $(document).height();
 
@@ -363,3 +359,215 @@ $(document).mousemove(function (e) {
         .css('top', moveY + 'px')
         .css('transform', 'rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)');
 });
+
+
+/*------------------------------------------------- GLSL Effect ---------------------------------------------------*/
+class Stage {
+    constructor() {
+        this.renderParam = {
+            width: window.innerWidth,
+            height: window.innerHeight
+        };
+
+        this.cameraParam = {
+            left: -1,
+            right: 1,
+            top: 1,
+            bottom: 1,
+            near: 0,
+            far: -1
+        };
+
+        this.scene = null;
+        this.camera = null;
+        this.renderer = null;
+        this.geometry = null;
+        this.material = null;
+        this.mesh = null;
+
+        this.isInitialized = false;
+    }
+
+    init() {
+        this._setScene();
+        this._setRender();
+        this._setCamera();
+
+        this.isInitialized = true;
+    }
+
+    _setScene() {
+        this.scene = new THREE.Scene();
+    }
+
+    _setRender() {
+        this.renderer = new THREE.WebGLRenderer({
+            alpha: true,
+            canvas: document.getElementById("webgl-canvas")
+        });
+        this.renderer.setPixelRatio(window.devicePixelRatio);
+
+        this.renderer.setSize(this.renderParam.width, this.renderParam.height);
+    }
+
+    _setCamera() {
+        if (!this.isInitialized) {
+            this.camera = new THREE.OrthographicCamera(
+                this.cameraParam.left,
+                this.cameraParam.right,
+                this.cameraParam.top,
+                this.cameraParam.bottom,
+                this.cameraParam.near,
+                this.cameraParam.far
+            );
+        }
+
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+
+        this.camera.aspect = windowWidth / windowHeight;
+
+        this.camera.updateProjectionMatrix();
+        this.renderer.setSize(windowWidth, windowHeight);
+    }
+
+    _render() {
+        this.renderer.render(this.scene, this.camera);
+    }
+
+    onResize() {
+        this._setCamera();
+    }
+
+    onRaf() {
+        this._render();
+    }
+}
+
+class Mesh {
+    constructor(stage) {
+        this.canvas = document.getElementById("webgl-canvas");
+        this.canvasWidth = this.canvas.width;
+        this.canvasHeight = this.canvas.height;
+
+        this.uniforms = {
+            resolution: {
+                type: "v2",
+                value: [this.canvasWidth, this.canvasHeight]
+            },
+            time: {
+                type: "f",
+                value: 0.0
+            },
+            xScale: {
+                type: "f",
+                value: 1.0
+            },
+            yScale: {
+                type: "f",
+                value: 0.5
+            },
+            distortion: {
+                type: "f",
+                value: 0.050
+            }
+        };
+
+        this.stage = stage;
+
+        this.mesh = null;
+
+        this.xScale = 1.0;
+        this.yScale = 0.5;
+        this.distortion = 0.050;
+    }
+
+    init() {
+        this._setMesh();
+    }
+
+    _setMesh() {
+        const position = [-1.0, -1.0, 0.0,
+            1.0, -1.0, 0.0, -1.0, 1.0, 0.0,
+            1.0, -1.0, 0.0, -1.0, 1.0, 0.0,
+            1.0, 1.0, 0.0
+        ];
+
+        const positions = new THREE.BufferAttribute(new Float32Array(position), 3);
+
+        const geometry = new THREE.BufferGeometry();
+        geometry.setAttribute("position", positions);
+
+        const material = new THREE.RawShaderMaterial({
+            vertexShader: document.getElementById("js-vertex-shader").textContent,
+            fragmentShader: document.getElementById("js-fragment-shader").textContent,
+            uniforms: this.uniforms,
+            transparent: true,
+            opacity: 1,
+            side: THREE.DoubleSide
+        });
+
+        this.mesh = new THREE.Mesh(geometry, material);
+
+        this.stage.scene.add(this.mesh);
+    }
+
+    _diffuse() {}
+
+    _render() {
+        this.uniforms.time.value += 0.01;
+    }
+
+    _setGui() {
+        const parameter = {
+            xScale: this.xScale,
+            yScale: this.yScale,
+            distortion: this.distortion
+        }
+        const gui = new dat.GUI();
+        gui.add(parameter, "xScale", 0.00, 5.00, 0.01).onChange((value) => {
+            this.mesh.material.uniforms.xScale.value = value;
+        });
+        gui.add(parameter, "yScale", 0.00, 1.00, 0.01).onChange((value) => {
+            this.mesh.material.uniforms.yScale.value = value;
+        });
+        gui.add(parameter, "distortion", 0.001, 0.100, 0.001).onChange((value) => {
+            this.mesh.material.uniforms.distortion.value = value;
+        });
+    }
+
+    onRaf() {
+        this._render();
+    }
+}
+
+(() => {
+    const stage = new Stage();
+
+    stage.init();
+
+    const mesh = new Mesh(stage);
+
+    mesh.init();
+
+    window.addEventListener("resize", () => {
+        stage.onResize();
+    });
+
+    window.addEventListener("load", () => {
+        setTimeout(() => {
+            mesh._diffuse();
+        }, 1000);
+    });
+
+    const _raf = () => {
+        window.requestAnimationFrame(() => {
+            stage.onRaf();
+            mesh.onRaf();
+
+            _raf();
+        });
+    };
+
+    _raf();
+})();
