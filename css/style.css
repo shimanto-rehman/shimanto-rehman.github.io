@@ -5,8 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
 
-
 /* ------------------------------------ Global Style ------------------------------------- */
+
 
 /* ------------------------------------ Define Custom CSS Variable ------------------------------------- */
 
@@ -29,7 +29,9 @@
     --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
 }
 
+
 /*------------------------------ Override Custom Css Variables  for Dark Theme ----------------------------------*/
+
 html {
     overflow: scroll;
     overflow-x: hidden;
@@ -69,7 +71,9 @@ body.hidden-scrolling {
     overflow-y: hidden;
 }
 
+
 /* Disable Text Select */
+
 div {
     -webkit-user-select: none;
     /* Safari */
@@ -91,7 +95,8 @@ div {
     outline: none;
 }
 
-:before, :after {
+:before,
+ :after {
     box-sizing: border-box;
 }
 
@@ -108,7 +113,6 @@ ul {
 img {
     vertical-align: middle;
     max-width: 100%;
-
 }
 
 .container-h {
@@ -294,43 +298,37 @@ img {
     }
 }
 
+
 /* ---------------- The Glowing Loader Animation --------------------- */
+
 @keyframes woosh {
     0% {
         width: 12px;
         transform: translate(0px, 0px) rotate(-35deg);
     }
-
     15% {
         width: 50px;
     }
-
     30% {
         width: 12px;
         transform: translate(214px, -150px) rotate(-35deg);
     }
-
     30.1% {
         transform: translate(214px, -150px) rotate(46deg);
     }
-
     50% {
         width: 110px;
     }
-
     70% {
         width: 12px;
         transform: translate(500px, 150px) rotate(46deg);
     }
-
     70.1% {
         transform: translate(500px, 150px) rotate(-37deg);
     }
-
     85% {
         width: 50px;
     }
-
     100% {
         width: 12px;
         transform: translate(700px, 0) rotate(-37deg);
@@ -341,11 +339,9 @@ img {
     0% {
         opacity: 0;
     }
-
     5% {
         opacity: 1;
     }
-
     30% {
         opacity: 0;
         transform: scale(3);
@@ -356,11 +352,9 @@ img {
     0% {
         opacity: 0;
     }
-
     5% {
         opacity: 1;
     }
-
     40% {
         opacity: 0;
         transform: scale(2.5) translate(50px, -50px) rotate(360deg);
@@ -371,11 +365,9 @@ img {
     0% {
         opacity: 0;
     }
-
     5% {
         opacity: 1;
     }
-
     30% {
         opacity: 0;
         transform: scale(3) translate(20px, 40px) rotate(360deg);
@@ -386,34 +378,32 @@ img {
     0% {
         opacity: 0;
     }
-
     5% {
         opacity: 1;
     }
-
     40% {
         opacity: 0;
         transform: scale(2) translate(-70px, -30px);
     }
 }
 
+
 /* Preloader Animations */
+
 @keyframes bounce1 {
-    from, to {
+    from,
+    to {
         transform: translateY(0) scale(1, 1);
         animation-timing-function: ease-in;
     }
-
     45% {
         transform: translateY(5em) scale(1, 1);
         animation-timing-function: linear;
     }
-
     50% {
         transform: translateY(5em) scale(1.5, 0.5);
         animation-timing-function: linear;
     }
-
     55% {
         transform: translateY(5em) scale(1, 1);
         animation-timing-function: ease-out;
@@ -424,27 +414,21 @@ img {
     0% {
         color: var(--color-1)
     }
-
     32% {
         color: var(--color-1)
     }
-
     33% {
         color: var(--color-2)
     }
-
     65% {
         color: var(--color-2)
     }
-
     66% {
         color: var(--color-3)
     }
-
     99% {
         color: var(--color-3)
     }
-
     100% {
         color: var(--color-1)
     }
@@ -454,17 +438,16 @@ img {
     from {
         width: 0
     }
-
     to {
         width: 100%
     }
 }
 
 @keyframes blink-caret {
-    from, to {
+    from,
+    to {
         border-color: transparent
     }
-
     50% {
         border-color: orange
     }
@@ -474,27 +457,26 @@ img {
     0% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
     }
 }
 
 @keyframes topBounce {
-    0%, 100% {
+    0%,
+    100% {
         transform: translateY(0);
     }
-
     50% {
         transform: translateY(25px);
     }
 }
 
 @keyframes leftBounce {
-    0%, 100% {
+    0%,
+    100% {
         transform: translateX(0);
     }
-
     50% {
         transform: translateX(25px);
     }
@@ -511,31 +493,25 @@ img {
         opacity: 0;
         transform: translateY(-25px);
     }
-
     100% {
         opacity: 1;
         transform: translateY(0px);
     }
 }
 
-
 @keyframes pulse {
     0% {
         box-shadow: 0 0 0 0 rgba(211, 211, 211, 0.1);
     }
-
     5% {
         transform: scale(1.01);
     }
-
     15% {
         transform: scale(1);
     }
-
     70% {
         box-shadow: 0 0 0 30px rgba(168, 63, 57, 0);
     }
-
     100% {
         box-shadow: 0 0 0 60px rgba(168, 63, 57, 0);
     }
@@ -573,7 +549,6 @@ img {
 
 /*----------------------------------- Preloader -----------------------------------*/
 
-
 .preloader {
     position: fixed;
     left: 0;
@@ -592,7 +567,9 @@ img {
     transition: all 0.6s ease;
 }
 
-.pl1__a, .pl1__b, .pl1__c {
+.pl1__a,
+.pl1__b,
+.pl1__c {
     border-radius: 50%;
     width: 1em;
     height: 1em;
@@ -625,7 +602,6 @@ img {
 
 
 /*------------------------------------ Header ------------------------------------- */
-
 
 .header {
     padding: 20px 15px;
@@ -694,7 +670,6 @@ img {
 
 
 /*------------------------------------ Navigation Menu ------------------------------------- */
-
 
 .nav-menu {
     position: fixed;
@@ -790,7 +765,6 @@ img {
     transition: all 0.7s ease-in-out;
 }
 
-
 .nav-menu ul {
     padding: 15px;
 }
@@ -872,7 +846,9 @@ img {
     transition-delay: 0.7s;
 }
 
+
 /* effect-shine */
+
 a.effect-shine:hover {
     -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .7) 30%, #000 50%, rgba(0, 0, 0, .7) 70%);
     mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .7) 30%, #000 50%, rgba(0, 0, 0, .7) 70%);
@@ -886,7 +862,6 @@ a.effect-shine:hover {
     from {
         -webkit-mask-position: 150%;
     }
-
     to {
         -webkit-mask-position: -50%;
     }
@@ -896,411 +871,311 @@ a.effect-shine:hover {
     0% {
         text-shadow: 1px 0 0 red, -1px 0 0 blue;
     }
-
     1% {
         text-shadow: 1px 0 0 red, -1px 0 0 blue;
     }
-
     2% {
         text-shadow: 1px 0 0 red, -1px 0 0 blue;
     }
-
     3% {
         text-shadow: 1px 0 0 red, -1px 0 0 blue;
     }
-
     4% {
         text-shadow: 1px 0 0 red, -1px 0 0 blue;
     }
-
     5% {
         text-shadow: -1px 0 0 red, 1px 0 0 blue;
     }
-
     6% {
         text-shadow: -1px 0 0 red, 1px 0 0 blue;
     }
-
     7% {
         text-shadow: -1px 0 0 red, 1px 0 0 blue;
     }
-
     8% {
         text-shadow: -1px 0 0 red, 1px 0 0 blue;
     }
-
     9% {
         text-shadow: -1px 0 0 red, 1px 0 0 blue;
     }
-
     10% {
         text-shadow: -1px 0 0 red, 1px 0 0 blue;
     }
-
     11% {
         text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
     }
-
     12% {
         text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
     }
-
     13% {
         text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
     }
-
     14% {
         text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
     }
-
     15% {
         text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
     }
-
     16% {
         text-shadow: -1px 0 0 red, 1px 0 0 lime;
     }
-
     17% {
         text-shadow: -1px 0 0 red, 1px 0 0 lime;
     }
-
     18% {
         text-shadow: -1px 0 0 red, 1px 0 0 lime;
     }
-
     19% {
         text-shadow: -1px 0 0 red, 1px 0 0 lime;
     }
-
     20% {
         text-shadow: -1px 0 0 red, 1px 0 0 lime;
     }
-
     21% {
         text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
     }
-
     22% {
         text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
     }
-
     23% {
         text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
     }
-
     24% {
         text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
     }
-
     25% {
         text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
     }
-
     26% {
         text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
     }
-
     27% {
         text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
     }
-
     28% {
         text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
     }
-
     29% {
         text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
     }
-
     30% {
         text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
     }
-
     31% {
         text-shadow: -1px 0 0 blue, 1px 0 0 lime;
     }
-
     32% {
         text-shadow: -1px 0 0 blue, 1px 0 0 lime;
     }
-
     33% {
         text-shadow: -1px 0 0 blue, 1px 0 0 lime;
     }
-
     34% {
         text-shadow: -1px 0 0 blue, 1px 0 0 lime;
     }
-
     35% {
         text-shadow: -1px 0 0 blue, 1px 0 0 lime;
     }
-
     36% {
         text-shadow: -1px 0 0 blue, 1px 0 0 lime;
     }
-
     37% {
         text-shadow: -1px 0 0 blue, 1px 0 0 lime;
     }
-
     38% {
         text-shadow: -1px 0 0 blue, 1px 0 0 lime;
     }
-
     39% {
         text-shadow: -1px 0 0 blue, 1px 0 0 lime;
     }
-
     40% {
         text-shadow: -1px 0 0 blue, 1px 0 0 lime;
     }
-
     41% {
         text-shadow: 50px 0 0 blue, -50px 0 0 lime;
     }
-
     42% {
         text-shadow: 0 0 0 blue, 0 0 0 lime;
     }
-
     43% {
         text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
     }
-
     44% {
         text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
     }
-
     45% {
         text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
     }
-
     46% {
         text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
     }
-
     47% {
         text-shadow: -1px 0 0 red, 1px 0 0 lime;
     }
-
     48% {
         text-shadow: -1px 0 0 red, 1px 0 0 lime;
     }
-
     49% {
         text-shadow: -1px 0 0 red, 1px 0 0 lime;
     }
-
     50% {
         text-shadow: -1px 0 0 red, 1px 0 0 lime;
     }
-
     51% {
         text-shadow: 1px 0 0 red, -1px 0 0 blue;
     }
-
     52% {
         text-shadow: 1px 0 0 red, -1px 0 0 blue;
     }
-
     53% {
         text-shadow: 1px 0 0 red, -1px 0 0 blue;
     }
-
     54% {
         text-shadow: 1px 0 0 red, -1px 0 0 blue;
     }
-
     55% {
         text-shadow: 1px 0 0 red, -1px 0 0 blue;
     }
-
     56% {
         text-shadow: -1px 0 0 red, 1px 0 0 blue;
     }
-
     57% {
         text-shadow: -1px 0 0 red, 1px 0 0 blue;
     }
-
     58% {
         text-shadow: -1px 0 0 red, 1px 0 0 blue;
     }
-
     59% {
         text-shadow: -1px 0 0 red, 1px 0 0 blue;
     }
-
     60% {
         text-shadow: -1px 0 0 red, 1px 0 0 blue;
     }
-
     61% {
         text-shadow: 30px 0 0 red, -30px 0 0 lime;
     }
-
     62% {
         text-shadow: 0 0 0 red, 0 0 0 lime;
     }
-
     63% {
         text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue;
     }
-
     64% {
         text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue;
     }
-
     65% {
         text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue;
     }
-
     66% {
         text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue;
     }
-
     67% {
         text-shadow: -1px 0 0 red, 1px 0 0 blue;
     }
-
     68% {
         text-shadow: -1px 0 0 red, 1px 0 0 blue;
     }
-
     69% {
         text-shadow: -1px 0 0 red, 1px 0 0 blue;
     }
-
     70% {
         text-shadow: -1px 0 0 red, 1px 0 0 blue;
     }
-
     71% {
         text-shadow: 70px 0 0 red, -70px 0 0 blue;
     }
-
     72% {
         text-shadow: 0 0 0 red, 0 0 0 blue;
     }
-
     73% {
         text-shadow: 1px 0 0 red, -1px 0 0 blue;
     }
-
     74% {
         text-shadow: 1px 0 0 red, -1px 0 0 blue;
     }
-
     75% {
         text-shadow: 1px 0 0 red, -1px 0 0 blue;
     }
-
     76% {
         text-shadow: 1px 0 0 red, -1px 0 0 blue;
     }
-
     77% {
         text-shadow: -1px 0 0 red, 1px 0 0 blue;
     }
-
     78% {
         text-shadow: -1px 0 0 red, 1px 0 0 blue;
     }
-
     79% {
         text-shadow: -1px 0 0 red, 1px 0 0 blue;
     }
-
     80% {
         text-shadow: -1px 0 0 red, 1px 0 0 blue;
     }
-
     81% {
         text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
     }
-
     82% {
         text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
     }
-
     83% {
         text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
     }
-
     84% {
         text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
     }
-
     85% {
         text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
     }
-
     86% {
         text-shadow: -1px 0 0 red, 1px 0 0 lime;
     }
-
     87% {
         text-shadow: -1px 0 0 red, 1px 0 0 lime;
     }
-
     88% {
         text-shadow: -1px 0 0 red, 1px 0 0 lime;
     }
-
     89% {
         text-shadow: -1px 0 0 red, 1px 0 0 lime;
     }
-
     90% {
         text-shadow: -1px 0 0 red, 1px 0 0 lime;
     }
-
     91% {
         text-shadow: 60px 0 0 lime, -60px 0 0 blue;
     }
-
     92% {
         text-shadow: 0 0 0 lime, 0 0 0 blue;
     }
-
     92% {
         text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
     }
-
     93% {
         text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
     }
-
     94% {
         text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
     }
-
     95% {
         text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
     }
-
     96% {
         text-shadow: -1px 0 0 blue, 1px 0 0 lime;
     }
-
     97% {
         text-shadow: -1px 0 0 blue, 1px 0 0 lime;
     }
-
     98% {
         text-shadow: -1px 0 0 blue, 1px 0 0 lime;
     }
-
     99% {
         text-shadow: -1px 0 0 blue, 1px 0 0 lime;
     }
-
     100% {
         text-shadow: -1px 0 0 blue, 1px 0 0 lime;
     }
 }
+
 
 /* .nav-menu .copyright-text {
     position: absolute;
@@ -1313,7 +1188,6 @@ a.effect-shine:hover {
 
 
 /*------------------------------------ Home Section ------------------------------------- */
-
 
 .home-section {
     position: relative;
@@ -1374,9 +1248,7 @@ a.effect-shine:hover {
     /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em;
     /* Adjust as needed */
-    animation:
-        typing 3s steps(30, end),
-        blink-caret .5s step-end infinite;
+    animation: typing 3s steps(30, end), blink-caret .5s step-end infinite;
 }
 
 .home-section .home-text h1 {
@@ -1428,7 +1300,9 @@ a.effect-shine:hover {
     border-radius: 4px;
 }
 
+
 /* ----------------------------------- Social Links -------------------------------------- */
+
 .social-tab a {
     text-align: center;
     margin-top: 5%;
@@ -1453,7 +1327,9 @@ a.effect-shine:hover {
     font-size: 1.5rem;
 }
 
+
 /* transition for social icon hover animation */
+
 .social-tab .fa-facebook,
 .fa-spotify,
 .fa-linkedin,
@@ -1464,7 +1340,9 @@ a.effect-shine:hover {
     cursor: pointer;
 }
 
+
 /* social media icons hover color */
+
 .social-tab .fa-facebook:hover,
 .fa-facebook:focus {
     color: #3b5998;
@@ -1516,7 +1394,6 @@ a.effect-shine:hover {
 
 
 /*------------------------------------ About section ------------------------------------- */
-
 
 .about-section {
     padding: 80px 0 0px;
@@ -1596,10 +1473,10 @@ a.effect-shine:hover {
 }
 
 @keyframes blink {
-    from, to {
+    from,
+    to {
         color: transparent
     }
-
     50% {
         color: rgba(245, 245, 245)
     }
@@ -1813,7 +1690,6 @@ a.effect-shine:hover {
 
 /*------------------------------------ Service Section ------------------------------------- */
 
-
 .service-section {
     min-height: 100vh;
 }
@@ -1832,7 +1708,8 @@ a.effect-shine:hover {
     text-align: center;
     width: 100%;
 }
-.service-section .container{   
+
+.service-section .container {
     padding: 80px 0 80px;
 }
 
@@ -1892,26 +1769,28 @@ a.effect-shine:hover {
     line-height: 26px;
 }
 
+
 /*----------------------------------------- Services Effect --------------------------------------------------*/
 
-.service-effect{
+.service-effect {
     height: 100%;
     width: 100%;
 }
-.area{ 
+
+.area {
     position: relative;
     height: inherit;
     width: 100%;
 }
 
-.circles{
+.circles {
     position: relative;
     height: 100%;
     width: 100%;
     overflow: hidden;
 }
 
-.circles li{
+.circles li {
     position: absolute;
     display: block;
     list-style: none;
@@ -1921,18 +1800,16 @@ a.effect-shine:hover {
     animation: animate-service 10s linear infinite;
     bottom: -150px;
     z-index: -90000;
-    
 }
 
-.circles li:nth-child(1){
+.circles li:nth-child(1) {
     left: 25%;
     width: 80px;
     height: 80px;
     animation-delay: 0s;
 }
 
-
-.circles li:nth-child(2){
+.circles li:nth-child(2) {
     left: 10%;
     width: 20px;
     height: 20px;
@@ -1940,14 +1817,14 @@ a.effect-shine:hover {
     animation-duration: 12s;
 }
 
-.circles li:nth-child(3){
+.circles li:nth-child(3) {
     left: 70%;
     width: 20px;
     height: 20px;
     animation-delay: 4s;
 }
 
-.circles li:nth-child(4){
+.circles li:nth-child(4) {
     left: 40%;
     width: 60px;
     height: 60px;
@@ -1955,28 +1832,28 @@ a.effect-shine:hover {
     animation-duration: 18s;
 }
 
-.circles li:nth-child(5){
+.circles li:nth-child(5) {
     left: 65%;
     width: 20px;
     height: 20px;
     animation-delay: 0s;
 }
 
-.circles li:nth-child(6){
+.circles li:nth-child(6) {
     left: 75%;
     width: 110px;
     height: 110px;
     animation-delay: 3s;
 }
 
-.circles li:nth-child(7){
+.circles li:nth-child(7) {
     left: 35%;
     width: 150px;
     height: 150px;
     animation-delay: 7s;
 }
 
-.circles li:nth-child(8){
+.circles li:nth-child(8) {
     left: 50%;
     width: 25px;
     height: 25px;
@@ -1984,7 +1861,7 @@ a.effect-shine:hover {
     animation-duration: 45s;
 }
 
-.circles li:nth-child(9){
+.circles li:nth-child(9) {
     left: 20%;
     width: 15px;
     height: 15px;
@@ -1992,7 +1869,7 @@ a.effect-shine:hover {
     animation-duration: 35s;
 }
 
-.circles li:nth-child(10){
+.circles li:nth-child(10) {
     left: 47%;
     width: 150px;
     height: 150px;
@@ -2000,7 +1877,7 @@ a.effect-shine:hover {
     animation-duration: 11s;
 }
 
-.circles li:nth-child(11){
+.circles li:nth-child(11) {
     left: 71%;
     width: 50px;
     height: 50px;
@@ -2008,63 +1885,71 @@ a.effect-shine:hover {
     animation-duration: 14;
 }
 
-.circles li:nth-child(12){
+.circles li:nth-child(12) {
     left: 75%;
     width: 25px;
     height: 25px;
     animation-delay: 14s;
     animation-duration: 4.5s;
 }
-.circles li:nth-child(13){
+
+.circles li:nth-child(13) {
     left: 22%;
     width: 47px;
     height: 47px;
     animation-delay: 6s;
     animation-duration: 5s;
 }
-.circles li:nth-child(14){
+
+.circles li:nth-child(14) {
     left: 33%;
     width: 105px;
     height: 105px;
     animation-delay: 14s;
     animation-duration: 7s;
 }
-.circles li:nth-child(15){
+
+.circles li:nth-child(15) {
     left: 83%;
     width: 75px;
     height: 75px;
     animation-delay: 7.3s;
     animation-duration: 10s;
 }
-.circles li:nth-child(16){
+
+.circles li:nth-child(16) {
     left: 77%;
     width: 94px;
     height: 94px;
     animation-delay: 3.3s;
     animation-duration: 4s;
 }
-.circles li:nth-child(17){
+
+.circles li:nth-child(17) {
     left: 44%;
     width: 17px;
     height: 17px;
     animation-delay: 1.7s;
     animation-duration: 2s;
 }
-.circles li:nth-child(18){
+
+.circles li:nth-child(18) {
     left: 24%;
     width: 67px;
     height: 67px;
     animation-delay: 0s;
     animation-duration: 8.4s;
 }
-.circles li:nth-child(19){
+
+.circles li:nth-child(19) {
     left: 12%;
     width: 38px;
     height: 38px;
     animation-delay: 7.5s;
     animation-duration: 4.4s;
 }
-.circles li:nth-child(12){
+
+.circles li:nth-child(12) {
     left: 60%;
     width: 87px;
     height: 87px;
@@ -2073,24 +1958,20 @@ a.effect-shine:hover {
 }
 
 @keyframes animate-service {
-
-    0%{
+    0% {
         transform: translateY(0) rotate(0deg);
         opacity: 1;
         border-radius: 0;
     }
-
-    100%{
+    100% {
         transform: translateY(-2800px) rotate(720deg);
         opacity: 0.7;
         border-radius: 50%;
     }
-
 }
 
 
 /*------------------------------------ Portfolio Section ------------------------------------- */
-
 
 .portfolio-section {
     padding: 80px 0 80px;
@@ -2197,6 +2078,7 @@ a.effect-shine:hover {
 .portfolio-section .portfolio-item-details {
     display: none;
 }
+
 
 /*------------------------------------ Portfolio Popup ------------------------------------- */
 
@@ -2457,7 +2339,9 @@ a.effect-shine:hover {
     right: 15px;
 }
 
+
 /*------------------------------------ Testimonial Section ------------------------------------- */
+
 .testimonial-section {
     padding: 80px 0 80px;
     min-height: 100vh;
@@ -2553,7 +2437,9 @@ a.effect-shine:hover {
     line-height: 40px;
 }
 
+
 /*---------------------------------- Contact Section -------------------------------*/
+
 .contact-section {
     padding: 80px 0 80px;
     min-height: 100vh;
@@ -2655,7 +2541,9 @@ a.effect-shine:hover {
     padding: 0 15px;
 }
 
+
 /* --------------------------- Letter Box Animation --------------------------------- */
+
 .letter-image {
     position: absolute;
     top: 37%;
@@ -2812,8 +2700,8 @@ a.effect-shine:hover {
 }
 
 
-
 /*----------------------------------------- Galaxy -------------------------------------------*/
+
 .effect-6 {
     top: 0%;
     left: 0%;
@@ -2823,7 +2711,6 @@ a.effect-shine:hover {
     z-index: -100000;
     width: 200px;
     height: 200px;
-
     background: rgb(236, 255, 0);
     background: radial-gradient(circle, rgba(236, 255, 0, .8) 0%, rgba(255, 184, 0, .7) 100%);
     position: absolute;
@@ -2930,7 +2817,9 @@ a.effect-shine:hover {
     transform: translate(-50%, -50%);
 }
 
+
 /* -------------------------------------- Glowing loader --------------------------------- */
+
 .animation-container {
     display: block;
     position: relative;
@@ -3053,7 +2942,10 @@ a.effect-shine:hover {
     background-color: rgba(178, 215, 232, 0.2);
 }
 
-.animation-container .boom-container .shape.triangle, .animation-container .boom-container .shape.circle, .animation-container .boom-container .shape.circle.big, .animation-container .boom-container .shape.disc {
+.animation-container .boom-container .shape.triangle,
+.animation-container .boom-container .shape.circle,
+.animation-container .boom-container .shape.circle.big,
+.animation-container .boom-container .shape.disc {
     animation-delay: 0.38s;
     animation-duration: 3s;
 }
@@ -3067,13 +2959,17 @@ a.effect-shine:hover {
     top: 325px;
 }
 
-.animation-container .boom-container.second .shape.triangle, .animation-container .boom-container.second .shape.circle, .animation-container .boom-container.second .shape.circle.big, .animation-container .boom-container.second .shape.disc {
+.animation-container .boom-container.second .shape.triangle,
+.animation-container .boom-container.second .shape.circle,
+.animation-container .boom-container.second .shape.circle.big,
+.animation-container .boom-container.second .shape.disc {
     animation-delay: 1.9s;
 }
 
 .animation-container .boom-container.second .shape.circle {
     animation-delay: 2.15s;
 }
+
 
 /* ------------------------------- Starry Night -------------------------------------------- */
 
@@ -3142,13 +3038,14 @@ a.effect-shine:hover {
     from {
         transform: translateY(0px);
     }
-
     to {
         transform: translateY(-2000px);
     }
 }
 
+
 /* ----------------------------------------- About Particle -------------------------------------------- */
+
 @keyframes particle-animation-1 {
     100% {
         transform: translate3d(4vw, 44vh, 35px);
@@ -3976,21 +3873,20 @@ a.effect-shine:hover {
 }
 
 @keyframes turn-around {
-    0%, 100% {
+    0%,
+    100% {
         top: calc(-10px * -1);
         left: 100%;
         z-index: 9;
     }
-
-    1%, 50% {
+    1%,
+    50% {
         z-index: -10000;
     }
-
     50% {
         top: calc(100% + 1 * 7px);
         left: 0;
     }
-
     51% {
         z-index: 9;
     }
@@ -4091,13 +3987,19 @@ a.effect-shine:hover {
     font-weight: 700;
 }
 
-.clock__days, .clock__hours, .clock__minutes, .clock__seconds {
+.clock__days,
+.clock__hours,
+.clock__minutes,
+.clock__seconds {
     font-size: 18px;
     font-weight: 300;
     color: var(--text-black-600);
 }
 
-.clock__days span, .clock__hours span, .clock__minutes span, .clock__seconds span {
+.clock__days span,
+.clock__hours span,
+.clock__minutes span,
+.clock__seconds span {
     font-size: 60px;
     font-weight: 700;
     color: var(--text-black-900);
@@ -4107,19 +4009,17 @@ a.effect-shine:hover {
     0% {
         transform: rotate(45deg);
     }
-
     50% {
         transform: rotate(40deg);
     }
-
     75% {
         transform: rotate(45deg);
     }
-
     100% {
         transform: rotate(48deg);
     }
 }
+
 
 /*----------------------------------------- leaf animations ---------------------------------------------------*/
 
@@ -4184,7 +4084,6 @@ a.effect-shine:hover {
     left: 85px;
     border-radius: 50%;
 }
-
 
 #leaves i:nth-of-type(n) {
     height: 23px;
@@ -4331,52 +4230,43 @@ a.effect-shine:hover {
     transform: rotate(180deg);
 }
 
-
 #leaves i:nth-of-type(n) {
     animation-timing-function: ease-in-out;
 }
 
 @keyframes falling {
-
     0% {
-        -webkit-transform:
-            translate3d(300, 0, 0) rotate(0deg);
+        -webkit-transform: translate3d(300, 0, 0) rotate(0deg);
     }
-
     100% {
-        -webkit-transform:
-            translate3d(-350px, 700px, 0) rotate(90deg);
+        -webkit-transform: translate3d(-350px, 700px, 0) rotate(90deg);
         opacity: 0;
     }
 }
 
 @keyframes falling3 {
     0% {
-        -webkit-transform:
-            translate3d(0, 0, 0) rotate(-20deg);
+        -webkit-transform: translate3d(0, 0, 0) rotate(-20deg);
     }
-
     100% {
-        -webkit-transform:
-            translate3d(-230px, 640px, 0) rotate(-70deg);
+        -webkit-transform: translate3d(-230px, 640px, 0) rotate(-70deg);
         opacity: 0;
     }
 }
 
 @keyframes falling2 {
     0% {
-        -webkit-transform:
-            translate3d(0, 0, 0) rotate(90deg);
+        -webkit-transform: translate3d(0, 0, 0) rotate(90deg);
     }
-
     100% {
-        -webkit-transform:
-            translate3d(-400px, 680px, 0) rotate(0deg);
+        -webkit-transform: translate3d(-400px, 680px, 0) rotate(0deg);
         opacity: 0;
     }
 }
 
+
 /*---------------------------------------------- Eye Movement ------------------------------------------*/
+
 .eye-movement {
     transform: scale(0.3);
     width: 100%;
@@ -4477,31 +4367,29 @@ a.effect-shine:hover {
         top: 50%;
         left: 50%;
     }
-
     15% {
         top: 50%;
         left: 20%;
     }
-
     33% {
         top: 50%;
         left: 70%;
     }
-
     66% {
         top: 80%;
         left: 45%;
     }
-
     100% {
         top: 50%;
         left: 50%;
     }
 }
 
+
 /*--------------------------------------------- Fire Works ----------------------------------------------------- */
 
-.pyro  .before, .pyro  .after {
+.pyro .before,
+.pyro .after {
     position: absolute;
     width: 5px;
     height: 5px;
@@ -4513,6 +4401,7 @@ a.effect-shine:hover {
     animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
     animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
 }
+
 .pyro .after {
     -moz-animation-delay: 1.25s, 1.25s, 1.25s;
     -webkit-animation-delay: 1.25s, 1.25s, 1.25s;
@@ -4525,153 +4414,138 @@ a.effect-shine:hover {
     -ms-animation-duration: 1.25s, 1.25s, 6.25s;
     animation-duration: 1.25s, 1.25s, 6.25s;
 }
+
 @keyframes bang {
     to {
         box-shadow: 200px -269.6666666667px #10f, -18px -347.6666666667px #50f, -221px -296.6666666667px #00ff7b, 59px 48.3333333333px #4000ff, -183px -387.6666666667px #0073ff, 211px -20.6666666667px #b7ff00, -79px -351.6666666667px #aeff00, 158px 66.3333333333px #c4ff00, 93px -151.6666666667px #00ff62, 197px -376.6666666667px #00d0ff, 73px -176.6666666667px #59ff00, 164px -273.6666666667px #f700ff, 18px 77.3333333333px #f20, 238px -238.6666666667px #00fff2, -30px -216.6666666667px #004cff, 69px -186.6666666667px #ff2600, -61px 67.3333333333px #00ffe1, -105px -211.6666666667px #f70, -154px -118.6666666667px #0015ff, -198px -170.6666666667px #ff00ea, 195px -119.6666666667px #6a00ff, 43px -395.6666666667px #0ff, 87px 28.3333333333px #95ff00, -169px -213.6666666667px #6a00ff, 194px -92.6666666667px #ff00d0, -9px -314.6666666667px #ffb700, -227px -144.6666666667px #f50, 240px -391.6666666667px #ff00a2, 57px -223.6666666667px #003cff, -230px -180.6666666667px #00ff59, 130px -289.6666666667px #00c8ff, -97px -140.6666666667px #000dff, 37px 15.3333333333px #d000ff, -222px -327.6666666667px #ff8c00, 240px -13.6666666667px #ff0d00, 234px 12.3333333333px #ff00a2, -127px 83.3333333333px #ff002b, 66px 56.3333333333px #0fe, -48px -304.6666666667px #1aff00, -59px 35.3333333333px #e100ff, -98px 35.3333333333px #00ff5e, -61px -276.6666666667px #8400ff, 162px -388.6666666667px #00b7ff, -16px -415.6666666667px #00e1ff, 4px -292.6666666667px #0095ff, -89px 71.3333333333px #ff6f00, -13px -340.6666666667px #9100ff, 26px 66.3333333333px #7b00ff, 182px -149.6666666667px #e0f, -47px -307.6666666667px #ffd900, -116px -244.6666666667px #003cff;
-   }
+    }
 }
 
 @keyframes gravity {
     to {
         transform: translateY(200px);
         opacity: 0;
-   }
+    }
 }
 
 @keyframes position {
-    0%, 19.9% {
+    0%,
+    19.9% {
         margin-top: 10%;
         margin-left: 40%;
-   }
-    20%, 39.9% {
+    }
+    20%,
+    39.9% {
         margin-top: 40%;
         margin-left: 30%;
-   }
-    40%, 59.9% {
+    }
+    40%,
+    59.9% {
         margin-top: 20%;
         margin-left: 70%;
-   }
-    60%, 79.9% {
+    }
+    60%,
+    79.9% {
         margin-top: 30%;
         margin-left: 20%;
-   }
-    80%, 99.9% {
+    }
+    80%,
+    99.9% {
         margin-top: 30%;
         margin-left: 80%;
-   }
+    }
 }
 
 #container-about-title {
-/* Center the text in the viewport. */
-	width: 100vw;
-	height: 80pt;
-	top: -10px;
-	bottom: 0;
-	/* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
-	filter: url(#threshold) blur(0.6px);
+    /* Center the text in the viewport. */
+    width: 100vw;
+    height: 80pt;
+    top: -10px;
+    bottom: 0;
+    /* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
+    filter: url(#threshold) blur(0.6px);
     padding-bottom: 150px;
 }
 
+
 /* Your average text styling */
-#text1, #text2 {
-	position: absolute;
-	width: 100%;
-	display: inline-block;	
-	font-family: 'Raleway', sans-serif;
-	font-size: 40px;	
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
     font-weight: 700;
-	text-align: center;	
-	user-select: none;
-    top:-10px;
+    text-align: center;
+    user-select: none;
+    top: -10px;
 }
-#text1{
+
+#text1 {
     color: #ffffff;
 }
-#text2{
+
+#text2 {
     color: var(--skin-color);
 }
-#filters{
+
+#filters {
     height: 0px;
     width: 0px;
 }
 
+
 /* ----------------------------------------------- Crowd Simulator ------------------------------------------------- */
 
-.crowd{
+.crowd {
     width: 100%;
     height: 100%;
     z-index: -199999999999999999999999999999999;
 }
+
 #crowd-simulator {
     width: 100% !important;
     height: 100% !important;
     position: absolute;
     z-index: -999;
-  }
+}
 
-/*------------------------------------------------ Burning Match ----------------------------------------------------*/
 
-    .match {
-    /* 
-    The animation is disabled because it can be CPU-consuming.
-    Uncomment the next CSS line to re-enable it. 
-    */
-    display: flex;
-    justify-content: space-between;
-    width: 50px !important;
-    aspect-ratio: 1;
-    background:
-      radial-gradient(100% 100% at 90% 90%, #000, #0003 20%, #0000 50%),
-      radial-gradient(farthest-side at 110% 120%, #000, #631, #fc0, #0000),
-      radial-gradient(at 100% 100%, #fc08, #ff00 60%),
-      linear-gradient(135deg, #fff0 20%, #ff0)
-      ;
-    background-color: #ffe;
-    border-radius: 2% 87% 45% 85%;
-    box-shadow:
-      inset 2vmin 2vmin 2vmin -1.5vmin #fa08,
-      inset  -1vmin -1vmin 4vmin -2vmin #00f7,
-      inset  0vmin  -1vmin 4vmin -2vmin #00f8,
-      inset  -1vmin -1vmin 2vmin -2vmin #000,
-      inset  -1vmin -1vmin 3vmin -1vmin #000,
-      inset  -1vmin -1vmin 2vmin #fc08,
-      -0.5vmin -0.5vmin 1vmin #ff08,
-      -1vmin -1vmin 2vmin #fc08,
-      -2vmin -2vmin 10vmin 1vmin #000,
-      -4vmin -4vmin 35vmin 3vmin #fa08;
-    filter: blur(0.1vmin);
-    transform: rotate(45deg);
-    /* demo */
+/*----------------------------------------------- GLSL Wave --------------------------------------------------------*/
+
+canvas#webgl-canvas {
     position: absolute;
-    top: 18%;
-    left: 50%;
-    transform: translate(-50%, -15vmin) rotate(45deg);
-    animation: burn 4s infinite;
-    width: 50vmin;
-    z-index: -900000000000;
-  }
-  
-  .match::after {
-    content: "";
-    display: block;
-    width: 6vmin;
-    height: 5vmin;
-    background: 
-      linear-gradient(45deg, #f002, #fff0),
-      linear-gradient(to right, #fff, #fa0 3%, #f34 20%, #000);
-    top: 60%;
-    left: 55%;
-    border-radius: 100% / 120% 80% 80% 120%;
-    position: absolute;
-    transform: translate(-50%, -50%) rotate(45deg);
-    box-shadow: 0 0 5vmin 3vmin #000a, inset -1vmin 0 1.5vmin #000;
-    transform: scale(0.3);
-  }
+    opacity: 0.4;
+    z-index: -999999999999999;
+    width: 100%!important;
+    height: 100%!important;
+    background: transparent;
+}
 
-  @keyframes burn {
-    0%, 100% { border-radius: 5% 87% 45% 85%; width: 30vmin; }
-    20% { border-radius: 5% 85% 49% 82%; }
-    40% { border-radius: 0% 85% 45% 87%; width: 28vmin; }
-    60% { border-radius: 2% 87% 42% 90%; }
-    80% { border-radius: 5% 97% 45% 88%; width: 31vmin; }
-  }
+
+/* ---------------------------------------------- Arrow Game -------------------------------------------------------- */
+
+.arrowGame .game {
+    width: 80%;
+    height: 250px;
+    left: 21%;
+    top: -40%;
+    position: relative;
+}
+
+.help {
+    color: white;
+    opacity: .7;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.arrowGame {
+    width: 80%;
+    height: 170px;
+}
