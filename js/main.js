@@ -329,16 +329,6 @@ document.getElementById("about-type1").onclick = function() {
 })();
 
 
-/* ------------------------------------------ Pre-Loader ---------------------------------------------- */
-
-window.addEventListener("load", () => {
-    // Preloader
-    document.querySelector(".preloader").classList.add("fade-out");
-    setTimeout(() => {
-        document.querySelector(".preloader").style.display = "none";
-    }, 600)
-})
-
 
 /* -------------------------------------------- 3D profile pic --------------------------------------------*/
 var moveForce = 14; // max popup movement in pixels
@@ -571,3 +561,13 @@ class Mesh {
 
     _raf();
 })();
+
+/* ------------------------------------------ Pre-Loader ---------------------------------------------- */
+
+window.addEventListener("load", () => {
+    // Preloader
+    document.querySelector(".preloader").classList.add("fade-out");
+    setTimeout(() => {
+        document.querySelector(".preloader").style.display = "none";
+    }, 600)
+})
