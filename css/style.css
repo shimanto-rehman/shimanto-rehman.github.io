@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Caveat&family=Press+Start+2P&family=Yuji+Boku&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+@import url('http://fonts.cdnfonts.com/css/harry-potter');
 
 /* ------------------------------------ Global Style ------------------------------------- */
 
@@ -1973,6 +1974,71 @@ a.effect-shine:hover {
 
 /*------------------------------------ Portfolio Section ------------------------------------- */
 
+/*------------------------------ Project Caption -------------------------------*/
+
+.project-head{
+    width:100%;  
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+  }
+  .project-caption{
+    text-align:center;
+    text-transform: uppercase;
+    color: #F1FAEE; 
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    width: 600px;
+  }
+  
+  .roller{
+    height: 4.125rem;
+    line-height: 4rem;
+    position: relative;
+    overflow: hidden; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--skin-color);
+  }
+  
+  
+  #extra-cap p{
+    font-size: 10px;
+    font-style: italic;
+    letter-spacing: 2px;
+    margin-top: 0;
+    color: var(--skin-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+  }
+  
+  .roller #rolltext {
+    position: absolute;
+    top: 0;
+    font-family: 'harry potter', sans-serif;
+    animation: slide 5s infinite;  
+  }
+  
+  @keyframes slide {
+    0%{
+      top:0;
+    }
+    25%{
+      top: -4rem;    
+    }
+    50%{
+      top: -8rem;
+    }
+    72.5%{
+      top: -12.25rem;
+    }
+  }
+
+/*------------------------------ Project Caption Ends --------------------------*/
 .portfolio-section {
     padding: 80px 0 80px;
     min-height: 100vh;

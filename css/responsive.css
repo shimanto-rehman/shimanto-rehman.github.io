@@ -209,6 +209,17 @@
 
 }
 
+@media (max-width: 640px) {
+    .roller #rolltext {
+        font-size: 20px;
+    }
+
+    #extra-cap p {
+        line-height: 1rem;
+        width: 300px;
+    }
+}
+
 @media(max-width: 574px) {
     .home-section .home-img .img-box {
         max-width: 260px;
@@ -314,7 +325,8 @@
         font-size: 12px;
         font-weight: 700;
     }
-    #container-about-title{
+
+    #container-about-title {
         padding-bottom: 100px;
     }
 
@@ -359,6 +371,7 @@
     .clock__days, .clock__hours, .clock__minutes, .clock__seconds {
         font-size: 12px;
     }
+
     #text1, #text2 {
         font-size: 30px;
     }
@@ -477,6 +490,17 @@
 
     .clock__days, .clock__hours, .clock__minutes, .clock__seconds {
         font-size: 9px;
+    }
+    .project-caption {
+        font-size: 22px;
+    }
+    .roller #rolltext {
+        font-size: 17px;
+    }
+    #extra-cap p {
+        line-height: 1rem;
+        width: 250px;
+        font-size: 8px;
     }
 }
 
