@@ -571,3 +571,112 @@ window.addEventListener("load", () => {
         document.querySelector(".preloader").style.display = "none";
     }, 600)
 })
+
+/*-------------------------------------------- -------------------------------------------------------------*/ 
+const canvas_sketch = (p) => {
+	let moons = [];
+	let crosses = [];
+	// red | green | purple | yellow | black | blue
+	let mainColors = [
+		"#D80368",
+		"#04A677",
+		"#6E2594",
+		"#FA8B25",
+		"#1C1919",
+		"#6699CC"
+	];
+
+	// SETUP
+	p.setup = function () {
+		p.createCanvas(2360, 1100);
+		p.rectMode(p.CENTER);
+		p.noStroke();
+		for (let i = 0; i < 50; i++) {
+			moons.push(new Moon(p.random(mainColors)));
+		}
+		for (let i = 0; i < 30; i++) {
+			crosses.push(new Cross(p.random(mainColors)));
+		}
+	};
+
+	// DRAW
+	p.draw = function () {
+		p.clear();
+
+		for (let i = 0; i < moons.length; i++) {
+			moons[i].grow();
+		}
+
+		for (let i = 0; i < crosses.length; i++) {
+			crosses[i].grow();
+		}
+	};
+
+	// RESET
+	const resetSketch = function () {
+		moons = [];
+		crosses = [];
+		mainColors = [
+			"#D80368",
+			"#04A677",
+			"#6E2594",
+			"#FA8B25",
+			"#1C1919",
+			"#6699CC"
+		];
+		p.setup();
+	};
+
+	// CLASS: MOON
+	class Moon {
+		constructor(col) {
+			this.x = p.random(100, p.width - 100);
+			this.y = p.random(100, p.height - 100);
+			this.off = 0.0;
+			this.size = 0.0;
+			this.col = col;
+			this.rand = p.random(0.8, 1.3);
+			this.delay = p.random(5, 10);
+		}
+
+		grow() {
+			this.off = this.off + p.random(0.01, 0.04);
+			this.size = p.cos(this.delay + this.off) * this.rand;
+
+			p.push();
+			p.translate(this.x, this.y);
+			p.scale(this.size);
+			p.fill(this.col);
+			p.ellipse(0, 0, 30);
+			p.pop();
+		}
+	}
+
+	// CLASS: CROSS
+	class Cross {
+		constructor(col) {
+			this.x = p.random(100, p.width - 100);
+			this.y = p.random(50, p.height - 50);
+			this.off = 0.0;
+			this.size = 0.0;
+			this.col = col;
+			this.rand = p.random(0.9, 1.5);
+			this.delay = p.random(5, 10);
+		}
+
+		grow() {
+			this.off = this.off + p.random(0.01, 0.04);
+			this.size = p.cos(this.delay + this.off) * this.rand;
+
+			p.push();
+			p.translate(this.x, this.y);
+			p.scale(this.size);
+			p.fill(this.col);
+			p.rect(0, 0, 40, 5);
+			p.rect(0, 0, 5, 40);
+			p.pop();
+		}
+	}
+};
+
+new p5(canvas_sketch, "canvas_sketch");
