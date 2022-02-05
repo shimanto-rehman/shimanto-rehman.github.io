@@ -4615,3 +4615,17 @@ canvas#webgl-canvas {
     width: 80%;
     height: 170px;
 }
+
+/*---------------------------------------------------------------- Project Effect --------------------------------------------------------------*/
+.project-effect {
+	display: grid;
+	place-items: center;	
+}
+
+#canvas_sketch {
+	padding: 10 rem;
+	opacity: 0.5;
+	z-index: -99999999999999999;
+    position: absolute;
+    top: -10%;
+}
