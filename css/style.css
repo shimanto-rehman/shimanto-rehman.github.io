@@ -183,6 +183,7 @@ img {
     display: inline-block;
     border: none;
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .btn-1:after {
@@ -729,6 +730,7 @@ img {
     transform: translate3d(0, 100%, 0);
     transition: all 0.7s ease-in-out;
     backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
 }
 
 .menu-branding.open {
@@ -757,6 +759,7 @@ img {
     position: relative;
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
     transform: translate3d(0, -100%, 0);
     transition: all 0.7s ease-in-out;
 }
@@ -2424,6 +2427,7 @@ a.effect-shine:hover {
     border-radius: 10px;
     overflow: hidden;
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .testimonial-section .testi-slider-container {
@@ -2493,6 +2497,7 @@ a.effect-shine:hover {
     border-radius: 50%;
     margin: 0 4px;
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .testimonial-section .testi-slider-nav span:after {
@@ -4526,7 +4531,6 @@ a.effect-shine:hover {
     /* Center the text in the viewport. */
     width: 100vw;
     height: 80pt;
-    top: -10px;
     bottom: 0;
     /* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
     filter: url(#threshold) blur(0.6px);
@@ -4546,7 +4550,6 @@ a.effect-shine:hover {
     font-weight: 700;
     text-align: center;
     user-select: none;
-    top: -10px;
 }
 
 #text1 {
