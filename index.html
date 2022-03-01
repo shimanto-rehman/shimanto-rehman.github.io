@@ -15,20 +15,20 @@
     <link rel="stylesheet" type="text/css" href="css/skins/color-1.css">
     <!-- Responsive Css -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <!-- Welcome animation -->
-    <link rel="stylesheet" type="text/css" href="css/welcome.css">
     <!-- Style Switcher -->
     <link rel="stylesheet" type="text/css" class="alternate-style" title="color-1" href="css/skins/color-1.css">
     <link rel="stylesheet" type="text/css" class="alternate-style" title="color-2" href="css/skins/color-2.css"
-        disabled>
+    disabled>
     <link rel="stylesheet" type="text/css" class="alternate-style" title="color-3" href="css/skins/color-3.css"
-        disabled>
+    disabled>
     <link rel="stylesheet" type="text/css" class="alternate-style" title="color-4" href="css/skins/color-4.css"
-        disabled>
+    disabled>
     <link rel="stylesheet" type="text/css" class="alternate-style" title="color-5" href="css/skins/color-5.css"
-        disabled>
+    disabled>
     <link rel="stylesheet" type="text/css" href="css/style-switcher.css">
     <script src="https://use.fontawesome.com/15d0f12843.js"></script>
+    <!-- Welcome animation -->
+    <link rel="stylesheet" type="text/css" href="css/welcome.css">
 
 </head>
 
@@ -43,14 +43,15 @@
         </div>
     </div>
     <!-- Preloader Ends -->
+
     <div class="criterion">
-        <div class="text text0">W</div>
-        <div class="text text1">e</div>
-        <div class="text text2">l</div>
-        <div class="text text3">c</div>
-        <div class="text text4">o</div>
-        <div class="text text5">m</div>
-        <div class="text text6">e</div>
+        <div class="welcome-text welcome-text0">W</div>
+        <div class="welcome-text welcome-text1">e</div>
+        <div class="welcome-text welcome-text2">l</div>
+        <div class="welcome-text welcome-text3">c</div>
+        <div class="welcome-text welcome-text4">o</div>
+        <div class="welcome-text welcome-text5">m</div>
+        <div class="welcome-text welcome-text6">e</div>
         <div class="atom atom00"></div>
         <div class="atom atom01"></div>
         <div class="atom atom02"></div>
@@ -172,22 +173,24 @@
                 <div class="portrait"></div>
             </div>
             <div class="nav-options">
-                <ul class="menu-nav">
-                    <li class="nav-item"><a href="#home" class="link-item effect-shine inner-shadow active">HOME</a>
-                    </li>
-                    <li class="nav-item"><a href="#about" class="link-item effect-shine outer-shadow hover-in-shadow"
-                            id="about-type">ABOUT</a>
-                    </li>
-                    <li class="nav-item"><a href="#services"
-                            class="link-item effect-shine outer-shadow hover-in-shadow">SERVICES</a></li>
-                    <li class="nav-item"><a href="#portfolio"
-                            class="link-item effect-shine outer-shadow hover-in-shadow">PROJECTS</a></li>
-                    <li class="nav-item"><a href="#testimonial"
-                            class="link-item effect-shine outer-shadow hover-in-shadow">TESTIMONIAL</a>
-                    </li>
-                    <li class="nav-item"><a href="#contact"
-                            class="link-item effect-shine outer-shadow hover-in-shadow">CONTACT</a></li>
-                </ul>
+                <div class="nav-menu-links">
+                    <ul class="menu-nav">
+                        <li class="nav-item"><a href="#home" class="link-item effect-shine inner-shadow active">HOME</a>
+                        </li>
+                        <li class="nav-item"><a href="#about" class="link-item effect-shine outer-shadow hover-in-shadow"
+                                id="about-type">ABOUT</a>
+                        </li>
+                        <li class="nav-item"><a href="#services"
+                                class="link-item effect-shine outer-shadow hover-in-shadow">SERVICES</a></li>
+                        <li class="nav-item"><a href="#portfolio"
+                                class="link-item effect-shine outer-shadow hover-in-shadow">PROJECTS</a></li>
+                        <li class="nav-item"><a href="#testimonial"
+                                class="link-item effect-shine outer-shadow hover-in-shadow">TESTIMONIAL</a>
+                        </li>
+                        <li class="nav-item"><a href="#contact"
+                                class="link-item effect-shine outer-shadow hover-in-shadow">CONTACT</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -539,6 +542,20 @@
                                 <div class="timeline-item">
                                     <div class="timeline-item-inner outer-shadow">
                                         <i class="fas fa-briefcase icon"></i>
+                                        <span>December, 2021 - Present</span>
+                                        <h3>Associate Software Engineer, Backend</h3>
+                                        <h4>Dana FinTech</h4>
+                                        <p>Dana enables digital platforms and banks to offer digital loans to MSMEs and individuals instantly
+                                            Integrate Dana embedded lending API with your e-commerce app, e-wallet, retailer app, or any digital 
+                                            platform to allow your merchants and users to apply for digital loan on the go. Embedded finance is 
+                                            the future of the financial services industry. </p>
+                                    </div>
+                                </div>
+                                <!-- Timeline Item Ends -->
+                                <!-- Timeline Item Starts -->
+                                <div class="timeline-item">
+                                    <div class="timeline-item-inner outer-shadow">
+                                        <i class="fas fa-briefcase icon"></i>
                                         <span>April, 2018 - June, 2020</span>
                                         <h3>Executive Head: Reasearch & Olympiads</h3>
                                         <h4>SUST Science Arena, SUST</h4>
@@ -885,6 +902,7 @@
                         </span>
                     </div>
                 </div>
+                <div id="planet"></div>
             </div>
             <!-- Porfolio Filter Starts -->
             <div class="row">
@@ -1182,8 +1200,7 @@
 
         <div class="pp-main">
             <div class="pp-main-inner">
-                <div class="pp-project-details-btn outer-shadow hover-in-shadow"> Project Details <i
-                        class="fas fa-plus"></i></div>
+                <div class="pp-project-details-btn outer-shadow hover-in-shadow"> Project Details <i class="fas fa-plus"></i></div>
                 <div class="pp-close outer-shadow hover-in-shadow">&times;</div>
                 <img src="img/portfolio/large/project-1/1.png" alt="img" class="pp-img outer-shadow">
                 <div class="pp-counter"></div>
@@ -1382,7 +1399,6 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
     <script type="text/babel" src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script src="js/babel.js"></script>
     <!-- GLSL Vertex Shader -->

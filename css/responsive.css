@@ -133,6 +133,11 @@
         padding-bottom: 30px;
     }
 
+    .criterion {
+        font-size: 1.6rem;
+        top: 70%;
+        left: 53%;
+      }
 }
 
 /*-------------------------- Blur -----------------------------------*/
@@ -309,6 +314,12 @@
 
     input:-internal-autofill-selected {
         color: transparent !important;
+    }
+
+    .criterion {
+        font-size: 17px;
+        top: 57%;
+        left: 56%;
     }
 }
 
@@ -501,6 +512,11 @@
         line-height: 1rem;
         width: 250px;
         font-size: 8px;
+    }
+    .criterion {
+        font-size: 14px;
+        top: 53%;
+        left: 60%;
     }
 }
 
