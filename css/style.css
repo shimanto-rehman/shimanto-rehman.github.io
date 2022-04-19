@@ -746,12 +746,11 @@ img {
   padding-top: 130px !important;
 }
 
-.menu-branding .portrait {
+.menu-branding .portrait img{
   width: 250px;
   height: 250px;
   position: relative;
   top: -20px !important;
-  background: url(https://i.imgur.com/fpXuzrt.jpg?1) center;
   border-radius: 50%;
 }
 
