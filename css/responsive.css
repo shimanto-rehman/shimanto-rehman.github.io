@@ -296,10 +296,9 @@
         max-width: 510px;
     }
 
-    .nav-menu .portrait {
+    .nav-menu .portrait img{
         width: 140px;
         height: 140px;
-        background: url(https://i.imgur.com/xX7vwOC.jpg?1) center;
     }
 
     .nav-menu ul li a {
