@@ -562,6 +562,14 @@ class Mesh {
     _raf();
 })();
 
+/* ----------------------------- Welcome Message Animation After website elementes are loaded ---------------------------------*/
+window.onload = function () {
+    setTimeout(appeardiv,1000);
+}
+function appeardiv() {
+    document.getElementById('welcome-msg').style.display= "block";
+}
+
 /* ------------------------------------------ Pre-Loader ---------------------------------------------- */
 
 window.addEventListener("load", () => {
