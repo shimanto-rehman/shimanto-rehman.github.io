@@ -742,9 +742,6 @@ img {
   transition: all 0.7s ease-in-out;
 }
 
-.menu-nav {
-  padding-top: 130px !important;
-}
 
 .menu-branding .portrait img{
   width: 250px;
@@ -756,10 +753,13 @@ img {
 
 .nav-options {
   float: left;
+  display: flex;
   width: 50%;
   height: 100vh;
   overflow: hidden;
   position: relative;
+  align-items: center;
+  justify-content: space-around;
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
