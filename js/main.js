@@ -562,7 +562,7 @@ class Mesh {
     _raf();
 })();
 
-/* ----------------- Welcome Message Animation After website elementes are loaded && Home Page Type Writing Effect ----------------------*/
+/* ----------------- Welcome Message && Home Page Type Writing Animation After website elementes are loaded ----------------------*/
 window.onload = function () {
     setTimeout(appeardiv, 1000);
     setTimeout(appearhometext, 500);
@@ -583,6 +583,4 @@ window.addEventListener("load", () => {
         document.querySelector(".preloader").style.display = "none";
     }, 600)
 })
-
-/* ---------------------------------- -----------------------------------------*/
 
