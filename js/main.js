@@ -117,10 +117,10 @@ function type() {
     text = '';
 }
 
-document.getElementById("about-type").onclick = function() {
+document.getElementById("about-type").onclick = function () {
     type();
 };
-document.getElementById("about-type1").onclick = function() {
+document.getElementById("about-type1").onclick = function () {
     type();
 };
 
@@ -207,14 +207,14 @@ document.getElementById("about-type1").onclick = function() {
     }
     // Next Slide
     nextBtn.addEventListener("click", () => {
-            if (slideIndex === screenshots.length - 1) {
-                slideIndex = 0;
-            } else {
-                slideIndex++;
-            }
-            popupSlideshow();
-        })
-        // Prev Slide
+        if (slideIndex === screenshots.length - 1) {
+            slideIndex = 0;
+        } else {
+            slideIndex++;
+        }
+        popupSlideshow();
+    })
+    // Prev Slide
     prevBtn.addEventListener("click", () => {
         if (slideIndex === 0) {
             slideIndex = screenshots.length - 1;
@@ -281,9 +281,9 @@ document.getElementById("about-type1").onclick = function() {
 
     // Set Width of All Slides
     slides.forEach((slide) => {
-            slide.style.width = slideWidth + "px";
-        })
-        // Set Width of slideContainer
+        slide.style.width = slideWidth + "px";
+    })
+    // Set Width of slideContainer
     sliderContainer.style.width = slideWidth * slides.length + "px";
 
     nextBtn.addEventListener("click", () => {
@@ -334,7 +334,7 @@ document.getElementById("about-type1").onclick = function() {
 var moveForce = 14; // max popup movement in pixels
 var rotateForce = 14; // max popup rotation in deg
 
-$(document).mousemove(function(e) {
+$(document).mousemove(function (e) {
     var docX = $(document).width();
     var docY = $(document).height();
 
@@ -502,7 +502,7 @@ class Mesh {
         this.stage.scene.add(this.mesh);
     }
 
-    _diffuse() {}
+    _diffuse() { }
 
     _render() {
         this.uniforms.time.value += 0.01;
@@ -562,12 +562,16 @@ class Mesh {
     _raf();
 })();
 
-/* ----------------------------- Welcome Message Animation After website elementes are loaded ---------------------------------*/
+/* ----------------- Welcome Message Animation After website elementes are loaded && Home Page Type Writing Effect ----------------------*/
 window.onload = function () {
-    setTimeout(appeardiv,1000);
+    setTimeout(appeardiv, 1000);
+    setTimeout(appearhometext, 500);
 }
 function appeardiv() {
-    document.getElementById('welcome-msg').style.display= "block";
+    document.getElementById('welcome-msg').style.display = "block";
+}
+function appearhometext() {
+    document.getElementById('home-typing-effect').style.display = "block";
 }
 
 /* ------------------------------------------ Pre-Loader ---------------------------------------------- */
@@ -579,4 +583,6 @@ window.addEventListener("load", () => {
         document.querySelector(".preloader").style.display = "none";
     }, 600)
 })
+
+/* ---------------------------------- -----------------------------------------*/
 
