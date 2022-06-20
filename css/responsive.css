@@ -1,3 +1,15 @@
+@media (max-width: 1920px) {
+
+    .criterion{
+        left: 25%;
+    }
+}
+@media (max-width: 1440px) {
+
+    .criterion{
+        left: 17%;
+    }
+}
 @media (max-width: 991px) {
 
     .portfolio-section .portfolio-item,
@@ -136,7 +148,7 @@
     .criterion {
         font-size: 1.6rem;
         top: 53%;
-        left: 53%;
+        left: 50%;
       }
 }
 
@@ -313,7 +325,7 @@
     .criterion {
         font-size: 17px;
         top: 50%;
-        left: 56%;
+        left: 50%;
     }
 }
 
@@ -509,7 +521,7 @@
     .criterion {
         font-size: 14px;
         top: 49%;
-        left: 60%;
+        left: 50%;
     }
 }
 

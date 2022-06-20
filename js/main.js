@@ -566,12 +566,19 @@ class Mesh {
 window.onload = function () {
     setTimeout(appeardiv, 1000);
     setTimeout(appearhometext, 500);
+    setTimeout(disappearDiv, 8000);
 }
+//Div will appeare after 1 sec the window is loaded fully
 function appeardiv() {
     document.getElementById('welcome-msg').style.display = "block";
 }
+//Effect will start after 0.5 seconds of 'window is fully loaded'
 function appearhometext() {
     document.getElementById('home-typing-effect').style.display = "block";
+}
+//Div will Disappeare After 8 sec
+function disappearDiv() {
+    document.getElementById("welcome-msg").style.display = " none";
 }
 
 /* ------------------------------------------ Pre-Loader ---------------------------------------------- */
