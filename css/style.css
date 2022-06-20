@@ -668,11 +668,18 @@ img {
 .criterion {
   font-size: 1.4rem;
   position: sticky;
-  top: 30%;
-  left: 22.5%;
   height: 0;
   width: 0;
-  transform: translate(-20px, -20px);
+  left: 17%;
+  transform: translate(0px, 0px);
+}
+.welcome-class{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 5.4rem;
 }
 
 /*------------------------------------ Navigation Menu ------------------------------------- */
