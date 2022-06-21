@@ -395,12 +395,12 @@
 }
 
 @media(max-width: 420px) {
-    .header .hamburger-btn {
+    .style-btn .hamburger-btn {
         height: 30px;
         width: 30px;
     }
 
-    .header .hamburger-btn span {
+    .style-btn .hamburger-btn span {
         display: block;
         height: 2px;
         width: 11px;
