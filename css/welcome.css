@@ -9,6 +9,7 @@
   color:white;
   font-weight:900;
   overflow: hidden;
+  transition: ease;
 }
 .welcome-text0 {
   left: -140px;
