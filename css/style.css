@@ -2552,6 +2552,12 @@ a.effect-shine:hover {
   text-transform: capitalize;
 }
 
+.testimonial-section .testi-item .testi-profile img{
+  border-radius: 50%;
+}
+.testimonial-section .testi-item .testi-profile h5{
+  color: var(--text-black-700);
+}
 .testimonial-section .testi-slider-nav {
   margin-top: 30px;
   text-align: center;
