@@ -1441,10 +1441,13 @@
                     <div class="row">
                         <div class="w-50">
                             <div class="input-group outer-shadow hover-in-shadow">
-                                <input type="text" name="name" id="name" placeholder="Name" class="input-control" required>
+                                <input type="text" name="Name" id="name" placeholder="Name" class="input-control" required>
                             </div>
                             <div class="input-group outer-shadow hover-in-shadow">
-                                <input type="email" name="emailaddress" id="email" placeholder="Email" class="input-control" required>
+                                <input type="email" name="emailaddress" id="Email" placeholder="Email" class="input-control" required>
+                            </div>
+                            <div class="input-group outer-shadow hover-in-shadow">
+                                <input type="text" name="Subject" placeholder="Subject" id="subject" class="input-control">
                             </div>
                             <div class="input-group outer-shadow hover-in-shadow">
                                 <input type="hidden" name="_subject" id="subject" value="New Mail!!!">
@@ -1452,7 +1455,7 @@
                         </div>
                         <div class="w-50">
                             <div class="input-group outer-shadow hover-in-shadow">
-                                <input class="input-control" name="message" id="message" placeholder="Message"></input>
+                                <textarea class="input-control" name="Message" id="message" placeholder="Message" required></textarea>
                             </div>
                         </div>
                     </div>
@@ -1507,22 +1510,6 @@
     <script type="text/javascript" src="js/main.min.js"></script>
     <!-- style switcher js -->
     <script type="text/javascript" src="js/style-switcher.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail() {
-            Email.send({
-                Host: "smtp.yourisp.com",
-                Username: "username",
-                Password: "password",
-                To: 'them@website.com',
-                From: "you@isp.com",
-                Subject: "This is the subject",
-                Body: "And this is the body"
-            }).then(
-                message => alert(message)
-            );
-        }
-    </script>
 </body>
 
 </html>
