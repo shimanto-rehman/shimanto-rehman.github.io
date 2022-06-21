@@ -581,3 +581,12 @@ function disappearDiv() {
     document.getElementById("welcome-msg").style.display = " none";
 }
 
+/* ------------------------------------------ Pre-Loader ---------------------------------------------- */
+
+window.addEventListener("load", () => {
+    // Preloader
+    document.querySelector(".preloader").classList.add("fade-out");
+    setTimeout(() => {
+        document.querySelector(".preloader").style.display = "none";
+    }, 600)
+})
