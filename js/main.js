@@ -591,3 +591,17 @@ window.addEventListener("load", () => {
         document.querySelector(".preloader").style.display = "none";
     }, 600)
 })
+
+/* ----------------------------------------- Submit Button & animations ---------------------------------------*/
+let btn = document.getElementById('btn');
+btn.addEventListener("click", function () {
+    btn.setAttribute('class', 'btn-1 process');
+    btn.innerHTML = 'Processing';
+    setTimeout(() => {
+        btn.setAttribute('class', 'btn-1 submitted');
+        btn.innerHTML = `
+         <span class="tick">&#10004;</span>
+         Submitted
+         `;
+    }, 1100);
+});
