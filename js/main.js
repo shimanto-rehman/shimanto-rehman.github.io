@@ -584,10 +584,10 @@ function disappearDiv() {
 /* ----------------------------------------- Submit Button & animations ---------------------------------------*/
 let btn = document.getElementById('btn');
 btn.addEventListener("click", function () {
-    btn.setAttribute('class', 'submit process');
+    btn.setAttribute('class', 'btn-1 process');
     btn.innerHTML = 'Processing';
     setTimeout(() => {
-        btn.setAttribute('class', 'submit submitted');
+        btn.setAttribute('class', 'btn-1 submitted');
         btn.innerHTML = `
      <span class="tick">&#10004;</span>
      Submitted
