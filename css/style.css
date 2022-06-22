@@ -305,29 +305,37 @@ img {
     width: 12px;
     transform: translate(0px, 0px) rotate(-35deg);
   }
+
   15% {
     width: 50px;
   }
+
   30% {
     width: 12px;
     transform: translate(214px, -150px) rotate(-35deg);
   }
+
   30.1% {
     transform: translate(214px, -150px) rotate(46deg);
   }
+
   50% {
     width: 110px;
   }
+
   70% {
     width: 12px;
     transform: translate(500px, 150px) rotate(46deg);
   }
+
   70.1% {
     transform: translate(500px, 150px) rotate(-37deg);
   }
+
   85% {
     width: 50px;
   }
+
   100% {
     width: 12px;
     transform: translate(700px, 0) rotate(-37deg);
@@ -338,9 +346,11 @@ img {
   0% {
     opacity: 0;
   }
+
   5% {
     opacity: 1;
   }
+
   30% {
     opacity: 0;
     transform: scale(3);
@@ -351,9 +361,11 @@ img {
   0% {
     opacity: 0;
   }
+
   5% {
     opacity: 1;
   }
+
   40% {
     opacity: 0;
     transform: scale(2.5) translate(50px, -50px) rotate(360deg);
@@ -364,9 +376,11 @@ img {
   0% {
     opacity: 0;
   }
+
   5% {
     opacity: 1;
   }
+
   30% {
     opacity: 0;
     transform: scale(3) translate(20px, 40px) rotate(360deg);
@@ -377,9 +391,11 @@ img {
   0% {
     opacity: 0;
   }
+
   5% {
     opacity: 1;
   }
+
   40% {
     opacity: 0;
     transform: scale(2) translate(-70px, -30px);
@@ -389,19 +405,23 @@ img {
 /* Preloader Animations */
 
 @keyframes bounce1 {
+
   from,
   to {
     transform: translateY(0) scale(1, 1);
     animation-timing-function: ease-in;
   }
+
   45% {
     transform: translateY(5em) scale(1, 1);
     animation-timing-function: linear;
   }
+
   50% {
     transform: translateY(5em) scale(1.5, 0.5);
     animation-timing-function: linear;
   }
+
   55% {
     transform: translateY(5em) scale(1, 1);
     animation-timing-function: ease-out;
@@ -412,21 +432,27 @@ img {
   0% {
     color: var(--color-1);
   }
+
   32% {
     color: var(--color-1);
   }
+
   33% {
     color: var(--color-2);
   }
+
   65% {
     color: var(--color-2);
   }
+
   66% {
     color: var(--color-3);
   }
+
   99% {
     color: var(--color-3);
   }
+
   100% {
     color: var(--color-1);
   }
@@ -436,16 +462,19 @@ img {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
 }
 
 @keyframes blink-caret {
+
   from,
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: orange;
   }
@@ -455,26 +484,31 @@ img {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
 
 @keyframes topBounce {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(25px);
   }
 }
 
 @keyframes leftBounce {
+
   0%,
   100% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(25px);
   }
@@ -491,6 +525,7 @@ img {
     opacity: 0;
     transform: translateY(-25px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0px);
@@ -501,19 +536,50 @@ img {
   0% {
     box-shadow: 0 0 0 0 rgba(211, 211, 211, 0.1);
   }
+
   5% {
     transform: scale(1.01);
   }
+
   15% {
     transform: scale(1);
   }
+
   70% {
     box-shadow: 0 0 0 30px rgba(168, 63, 57, 0);
   }
+
   100% {
     box-shadow: 0 0 0 60px rgba(168, 63, 57, 0);
   }
 }
+
+/* ------------------------- Submit Button Animation ------------------------- */
+@keyframes processing {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes tick {
+  0% {
+    transform: scale(0.1);
+  }
+
+  75% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ------------------------ Submit Button Ends --------------------------------- */
 
 .section-title {
   padding: 0 15px;
@@ -606,7 +672,8 @@ img {
   left: 17%;
   transform: translate(0px, 0px);
 }
-.welcome-class{
+
+.welcome-class {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -685,7 +752,7 @@ img {
 }
 
 
-.menu-branding .portrait img{
+.menu-branding .portrait img {
   width: 250px;
   height: 250px;
   position: relative;
@@ -798,18 +865,14 @@ img {
 /* Nav Items Hover Glitch effect */
 
 a.effect-shine:hover {
-  -webkit-mask-image: linear-gradient(
-    -75deg,
-    rgba(0, 0, 0, 0.7) 30%,
-    #000 50%,
-    rgba(0, 0, 0, 0.7) 70%
-  );
-  mask-image: linear-gradient(
-    -75deg,
-    rgba(0, 0, 0, 0.7) 30%,
-    #000 50%,
-    rgba(0, 0, 0, 0.7) 70%
-  );
+  -webkit-mask-image: linear-gradient(-75deg,
+      rgba(0, 0, 0, 0.7) 30%,
+      #000 50%,
+      rgba(0, 0, 0, 0.7) 70%);
+  mask-image: linear-gradient(-75deg,
+      rgba(0, 0, 0, 0.7) 30%,
+      #000 50%,
+      rgba(0, 0, 0, 0.7) 70%);
   -webkit-mask-size: 200%;
   mask-size: 200%;
   animation: shine 0.7s infinite;
@@ -820,6 +883,7 @@ a.effect-shine:hover {
   from {
     -webkit-mask-position: 150%;
   }
+
   to {
     -webkit-mask-position: -50%;
   }
@@ -829,306 +893,407 @@ a.effect-shine:hover {
   0% {
     text-shadow: 1px 0 0 red, -1px 0 0 blue;
   }
+
   1% {
     text-shadow: 1px 0 0 red, -1px 0 0 blue;
   }
+
   2% {
     text-shadow: 1px 0 0 red, -1px 0 0 blue;
   }
+
   3% {
     text-shadow: 1px 0 0 red, -1px 0 0 blue;
   }
+
   4% {
     text-shadow: 1px 0 0 red, -1px 0 0 blue;
   }
+
   5% {
     text-shadow: -1px 0 0 red, 1px 0 0 blue;
   }
+
   6% {
     text-shadow: -1px 0 0 red, 1px 0 0 blue;
   }
+
   7% {
     text-shadow: -1px 0 0 red, 1px 0 0 blue;
   }
+
   8% {
     text-shadow: -1px 0 0 red, 1px 0 0 blue;
   }
+
   9% {
     text-shadow: -1px 0 0 red, 1px 0 0 blue;
   }
+
   10% {
     text-shadow: -1px 0 0 red, 1px 0 0 blue;
   }
+
   11% {
     text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
   }
+
   12% {
     text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
   }
+
   13% {
     text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
   }
+
   14% {
     text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
   }
+
   15% {
     text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
   }
+
   16% {
     text-shadow: -1px 0 0 red, 1px 0 0 lime;
   }
+
   17% {
     text-shadow: -1px 0 0 red, 1px 0 0 lime;
   }
+
   18% {
     text-shadow: -1px 0 0 red, 1px 0 0 lime;
   }
+
   19% {
     text-shadow: -1px 0 0 red, 1px 0 0 lime;
   }
+
   20% {
     text-shadow: -1px 0 0 red, 1px 0 0 lime;
   }
+
   21% {
     text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
   }
+
   22% {
     text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
   }
+
   23% {
     text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
   }
+
   24% {
     text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
   }
+
   25% {
     text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
   }
+
   26% {
     text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
   }
+
   27% {
     text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
   }
+
   28% {
     text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
   }
+
   29% {
     text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
   }
+
   30% {
     text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
   }
+
   31% {
     text-shadow: -1px 0 0 blue, 1px 0 0 lime;
   }
+
   32% {
     text-shadow: -1px 0 0 blue, 1px 0 0 lime;
   }
+
   33% {
     text-shadow: -1px 0 0 blue, 1px 0 0 lime;
   }
+
   34% {
     text-shadow: -1px 0 0 blue, 1px 0 0 lime;
   }
+
   35% {
     text-shadow: -1px 0 0 blue, 1px 0 0 lime;
   }
+
   36% {
     text-shadow: -1px 0 0 blue, 1px 0 0 lime;
   }
+
   37% {
     text-shadow: -1px 0 0 blue, 1px 0 0 lime;
   }
+
   38% {
     text-shadow: -1px 0 0 blue, 1px 0 0 lime;
   }
+
   39% {
     text-shadow: -1px 0 0 blue, 1px 0 0 lime;
   }
+
   40% {
     text-shadow: -1px 0 0 blue, 1px 0 0 lime;
   }
+
   41% {
     text-shadow: 50px 0 0 blue, -50px 0 0 lime;
   }
+
   42% {
     text-shadow: 0 0 0 blue, 0 0 0 lime;
   }
+
   43% {
     text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
   }
+
   44% {
     text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
   }
+
   45% {
     text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
   }
+
   46% {
     text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
   }
+
   47% {
     text-shadow: -1px 0 0 red, 1px 0 0 lime;
   }
+
   48% {
     text-shadow: -1px 0 0 red, 1px 0 0 lime;
   }
+
   49% {
     text-shadow: -1px 0 0 red, 1px 0 0 lime;
   }
+
   50% {
     text-shadow: -1px 0 0 red, 1px 0 0 lime;
   }
+
   51% {
     text-shadow: 1px 0 0 red, -1px 0 0 blue;
   }
+
   52% {
     text-shadow: 1px 0 0 red, -1px 0 0 blue;
   }
+
   53% {
     text-shadow: 1px 0 0 red, -1px 0 0 blue;
   }
+
   54% {
     text-shadow: 1px 0 0 red, -1px 0 0 blue;
   }
+
   55% {
     text-shadow: 1px 0 0 red, -1px 0 0 blue;
   }
+
   56% {
     text-shadow: -1px 0 0 red, 1px 0 0 blue;
   }
+
   57% {
     text-shadow: -1px 0 0 red, 1px 0 0 blue;
   }
+
   58% {
     text-shadow: -1px 0 0 red, 1px 0 0 blue;
   }
+
   59% {
     text-shadow: -1px 0 0 red, 1px 0 0 blue;
   }
+
   60% {
     text-shadow: -1px 0 0 red, 1px 0 0 blue;
   }
+
   61% {
     text-shadow: 30px 0 0 red, -30px 0 0 lime;
   }
+
   62% {
     text-shadow: 0 0 0 red, 0 0 0 lime;
   }
+
   63% {
     text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue;
   }
+
   64% {
     text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue;
   }
+
   65% {
     text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue;
   }
+
   66% {
     text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue;
   }
+
   67% {
     text-shadow: -1px 0 0 red, 1px 0 0 blue;
   }
+
   68% {
     text-shadow: -1px 0 0 red, 1px 0 0 blue;
   }
+
   69% {
     text-shadow: -1px 0 0 red, 1px 0 0 blue;
   }
+
   70% {
     text-shadow: -1px 0 0 red, 1px 0 0 blue;
   }
+
   71% {
     text-shadow: 70px 0 0 red, -70px 0 0 blue;
   }
+
   72% {
     text-shadow: 0 0 0 red, 0 0 0 blue;
   }
+
   73% {
     text-shadow: 1px 0 0 red, -1px 0 0 blue;
   }
+
   74% {
     text-shadow: 1px 0 0 red, -1px 0 0 blue;
   }
+
   75% {
     text-shadow: 1px 0 0 red, -1px 0 0 blue;
   }
+
   76% {
     text-shadow: 1px 0 0 red, -1px 0 0 blue;
   }
+
   77% {
     text-shadow: -1px 0 0 red, 1px 0 0 blue;
   }
+
   78% {
     text-shadow: -1px 0 0 red, 1px 0 0 blue;
   }
+
   79% {
     text-shadow: -1px 0 0 red, 1px 0 0 blue;
   }
+
   80% {
     text-shadow: -1px 0 0 red, 1px 0 0 blue;
   }
+
   81% {
     text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
   }
+
   82% {
     text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
   }
+
   83% {
     text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
   }
+
   84% {
     text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
   }
+
   85% {
     text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
   }
+
   86% {
     text-shadow: -1px 0 0 red, 1px 0 0 lime;
   }
+
   87% {
     text-shadow: -1px 0 0 red, 1px 0 0 lime;
   }
+
   88% {
     text-shadow: -1px 0 0 red, 1px 0 0 lime;
   }
+
   89% {
     text-shadow: -1px 0 0 red, 1px 0 0 lime;
   }
+
   90% {
     text-shadow: -1px 0 0 red, 1px 0 0 lime;
   }
+
   91% {
     text-shadow: 60px 0 0 lime, -60px 0 0 blue;
   }
+
   92% {
     text-shadow: 0 0 0 lime, 0 0 0 blue;
   }
+
   92% {
     text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
   }
+
   93% {
     text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
   }
+
   94% {
     text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
   }
+
   95% {
     text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
   }
+
   96% {
     text-shadow: -1px 0 0 blue, 1px 0 0 lime;
   }
+
   97% {
     text-shadow: -1px 0 0 blue, 1px 0 0 lime;
   }
+
   98% {
     text-shadow: -1px 0 0 blue, 1px 0 0 lime;
   }
+
   99% {
     text-shadow: -1px 0 0 blue, 1px 0 0 lime;
   }
+
   100% {
     text-shadow: -1px 0 0 blue, 1px 0 0 lime;
   }
@@ -1416,10 +1581,12 @@ a.effect-shine:hover {
 }
 
 @keyframes blink {
+
   from,
   to {
     color: transparent;
   }
+
   50% {
     color: rgba(245, 245, 245);
   }
@@ -1570,17 +1737,11 @@ a.effect-shine:hover {
   z-index: -1;
 }
 
-.about-section
-  .timeline
-  .timeline-item:nth-child(odd)
-  .timeline-item-inner:before {
+.about-section .timeline .timeline-item:nth-child(odd) .timeline-item-inner:before {
   right: -30px;
 }
 
-.about-section
-  .timeline
-  .timeline-item:nth-child(even)
-  .timeline-item-inner:before {
+.about-section .timeline .timeline-item:nth-child(even) .timeline-item-inner:before {
   left: -30px;
 }
 
@@ -1910,6 +2071,7 @@ a.effect-shine:hover {
     opacity: 1;
     border-radius: 0;
   }
+
   100% {
     transform: translateY(-2800px) rotate(720deg);
     opacity: 0.7;
@@ -1928,6 +2090,7 @@ a.effect-shine:hover {
   justify-content: center;
   text-align: center;
 }
+
 .project-caption {
   text-align: center;
   text-transform: uppercase;
@@ -1971,12 +2134,15 @@ a.effect-shine:hover {
   0% {
     top: 0;
   }
+
   25% {
     top: -4rem;
   }
+
   50% {
     top: -8rem;
   }
+
   72.5% {
     top: -12.25rem;
   }
@@ -2094,7 +2260,7 @@ a.effect-shine:hover {
   background-image: url("https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcTQqoB4xBnIkmUg5pxDyYW2h0Q1pRTsbQBOfhg-E-y4iLFicsyi");
   width: 70px;
   height: 70px;
-  top:-50px;
+  top: -50px;
   /* a black shadow from left and white from right */
   box-shadow: inset 16px 0 40px 3px rgba(0, 0, 0, 0.9),
     inset -3px 0 5px 2px rgba(255, 255, 255, 0.16);
@@ -2112,9 +2278,11 @@ a.effect-shine:hover {
   0% {
     left: 200px;
   }
+
   70% {
     left: -200px;
   }
+
   100% {
     left: 200px;
   }
@@ -2124,24 +2292,30 @@ a.effect-shine:hover {
   0% {
     transform: scale(1);
   }
+
   32% {
     transform: scale(0.4);
     animation-timing-function: ease-in;
   }
+
   70% {
     transform: scale(1);
     animation-timing-function: ease-in;
   }
+
   75% {
     transform: scale(1.2);
     animation-timing-function: ease-in-out;
   }
+
   86% {
     transform: scale(2);
   }
+
   98% {
     transform: scale(1.2);
   }
+
   100% {
     transform: scale(1);
   }
@@ -2151,6 +2325,7 @@ a.effect-shine:hover {
   0% {
     background-position: 0px;
   }
+
   100% {
     background-position: 190px;
   }
@@ -2487,12 +2662,14 @@ a.effect-shine:hover {
   text-transform: capitalize;
 }
 
-.testimonial-section .testi-item .testi-profile img{
+.testimonial-section .testi-item .testi-profile img {
   border-radius: 50%;
 }
-.testimonial-section .testi-item .testi-profile h5{
+
+.testimonial-section .testi-item .testi-profile h5 {
   color: var(--text-black-700);
 }
+
 .testimonial-section .testi-slider-nav {
   margin-top: 30px;
   text-align: center;
@@ -2623,6 +2800,75 @@ a.effect-shine:hover {
   padding: 0 15px;
 }
 
+.submit {
+  cursor: pointer;
+  position: relative;
+  width: 170px;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+  border-radius: 30px;
+  background: transparent;
+  color: white;
+  background-color: transparent;
+  display: inline-block;
+  border: none;
+  transition: width 0.5s;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.submit:after {
+  border-radius: 30px;
+}
+
+.process {
+  width: 170px;
+  box-shadow:
+    0px 1px 10px #0a990a,
+    0px 2px 15px #990a0a,
+    0px 3px 20px #0a0a99,
+    -1px 1px 25px #0a990a,
+    -1px 2px 30px #990a0a,
+    -1px 3px 35px #0a0a99;
+}
+
+.process::before {
+  content: ' ';
+  position: absolute;
+  background-color: #3bb78f;
+  background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 0%;
+  animation: processing 1s;
+  border-radius: 30px;
+  z-index: -1;
+}
+
+.tick {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  opacity: 1;
+  transition: left 0.5s;
+}
+
+.submitted {
+  padding-left: 40px;
+  animation: tick 0.6s;
+  background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+  box-shadow:
+    0px 1px 10px #0a990a,
+    0px 2px 15px #990a0a,
+    0px 3px 20px #0a0a99,
+    -1px 1px 25px #0a990a,
+    -1px 2px 30px #990a0a,
+    -1px 3px 35px #0a0a99;
+}
+
 /* --------------------------- Letter Box Animation --------------------------------- */
 
 .letter-image {
@@ -2711,13 +2957,11 @@ a.effect-shine:hover {
 .animated-mail .letter .letter-border {
   height: 10px;
   width: 100%;
-  background: repeating-linear-gradient(
-    -45deg,
-    #cb5a5e,
-    #cb5a5e 8px,
-    transparent 8px,
-    transparent 18px
-  );
+  background: repeating-linear-gradient(-45deg,
+      #cb5a5e,
+      #cb5a5e 8px,
+      transparent 8px,
+      transparent 18px);
 }
 
 .animated-mail .letter .letter-title {
@@ -2759,11 +3003,9 @@ a.effect-shine:hover {
   -moz-transition: 0.4s;
   -moz-transform: translateX(-50%);
   border-radius: 100%;
-  background: radial-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0)
-  );
+  background: radial-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0));
 }
 
 .letter-image:hover .animated-mail {
@@ -2802,11 +3044,9 @@ a.effect-shine:hover {
   width: 200px;
   height: 200px;
   background: rgb(236, 255, 0);
-  background: radial-gradient(
-    circle,
-    rgba(236, 255, 0, 0.8) 0%,
-    rgba(255, 184, 0, 0.7) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(236, 255, 0, 0.8) 0%,
+      rgba(255, 184, 0, 0.7) 100%);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3113,13 +3353,11 @@ a.effect-shine:hover {
 .cake__candle {
   width: 5px;
   height: 40px;
-  background-image: repeating-linear-gradient(
-    -45deg,
-    white,
-    white 5px,
-    #e76868 5px,
-    #e76868 10px
-  );
+  background-image: repeating-linear-gradient(-45deg,
+      white,
+      white 5px,
+      #e76868 5px,
+      #e76868 10px);
   position: relative;
   top: -15px;
 }
@@ -3190,12 +3428,15 @@ a.effect-shine:hover {
   0% {
     transform: rotate(45deg);
   }
+
   50% {
     transform: rotate(40deg);
   }
+
   75% {
     transform: rotate(45deg);
   }
+
   100% {
     transform: rotate(48deg);
   }
@@ -3418,6 +3659,7 @@ a.effect-shine:hover {
   0% {
     -webkit-transform: translate3d(300, 0, 0) rotate(0deg);
   }
+
   100% {
     -webkit-transform: translate3d(-350px, 700px, 0) rotate(90deg);
     opacity: 0;
@@ -3428,6 +3670,7 @@ a.effect-shine:hover {
   0% {
     -webkit-transform: translate3d(0, 0, 0) rotate(-20deg);
   }
+
   100% {
     -webkit-transform: translate3d(-230px, 640px, 0) rotate(-70deg);
     opacity: 0;
@@ -3438,6 +3681,7 @@ a.effect-shine:hover {
   0% {
     -webkit-transform: translate3d(0, 0, 0) rotate(90deg);
   }
+
   100% {
     -webkit-transform: translate3d(-400px, 680px, 0) rotate(0deg);
     opacity: 0;
@@ -3537,7 +3781,7 @@ a.effect-shine:hover {
   transition: 0.4s all;
 }
 
-.eye:hover > .shut span {
+.eye:hover>.shut span {
   height: 200%;
 }
 
@@ -3546,18 +3790,22 @@ a.effect-shine:hover {
     top: 50%;
     left: 50%;
   }
+
   15% {
     top: 50%;
     left: 20%;
   }
+
   33% {
     top: 50%;
     left: 70%;
   }
+
   66% {
     top: 80%;
     left: 45%;
   }
+
   100% {
     top: 50%;
     left: 50%;
@@ -3644,26 +3892,31 @@ a.effect-shine:hover {
 }
 
 @keyframes position {
+
   0%,
   19.9% {
     margin-top: 10%;
     margin-left: 40%;
   }
+
   20%,
   39.9% {
     margin-top: 40%;
     margin-left: 30%;
   }
+
   40%,
   59.9% {
     margin-top: 20%;
     margin-left: 70%;
   }
+
   60%,
   79.9% {
     margin-top: 30%;
     margin-left: 20%;
   }
+
   80%,
   99.9% {
     margin-top: 30%;
