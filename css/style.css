@@ -1516,7 +1516,7 @@ a.effect-shine:hover {
 
 .about-section .about-img .img-box {
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 50%;
   position: relative;
   top: -40px;
 }
@@ -2735,6 +2735,10 @@ a.effect-shine:hover {
   color: var(--text-black-700);
   margin: 15px 0 10px;
   text-transform: capitalize;
+}
+
+.contact-section .contact-item-inner a{
+  text-decoration: none;
 }
 
 .contact-section .contact-item-inner p {
