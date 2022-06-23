@@ -191,7 +191,6 @@ img {
 .effect-wrap .effect {
   position: absolute;
   z-index: -1;
-  height: 100%;
 }
 
 .effect-1 {
