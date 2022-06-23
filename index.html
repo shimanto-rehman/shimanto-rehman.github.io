@@ -32,7 +32,10 @@
     <link rel="stylesheet" type="text/css" href="css/starry-night.min.css">
 </head>
 
-<body class="dark">
+<body class="dark effect">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
     <!-- Preloader Starts -->
     <div class="preloader">
         <div class="pl1">
@@ -171,11 +174,7 @@
                     <div class="sun"></div>
                 </div>
             </div>
-            <div class="effect">
-                <div id='stars'></div>
-                <div id='stars2'></div>
-                <div id='stars3'></div>
-            </div>
+            
             <!------------------------------------------------------ GLSL Starts ------------------------------------------------->
             <canvas id="webgl-canvas"></canvas>
             <!-------------------------------------------------------- GLSL Ends -------------------------------------------------->
@@ -358,11 +357,6 @@
     <section class="about-section section fx-section" id="about">
         <!-- The Glowing Loader Starts -->
         <div class="effect-wrap">
-            <div class="effect">
-                <div id='stars'></div>
-                <div id='stars2'></div>
-                <div id='stars3'></div>
-            </div>
             <div class="animation-container">
                 <div class="lightning-container">
                     <div class="lightning white"></div>
@@ -434,6 +428,7 @@
                     <span class="tab-item outer-shadow active" data-target=".experience">experience</span>
                     <span class="tab-item" data-target=".education">education</span>
                     <span class="tab-item" data-target=".skills">skills</span>
+                    <span class="tab-item" data-target=".achievements">achievements</span>
                 </div>
             </div>
             <!-- About tabs Ends-->
@@ -674,6 +669,77 @@
                 </div>
             </div>
             <!-- Skill Ends -->
+            <!-- Achievement Starts -->
+            <div class="row">
+                <div class="achievements tab-content">
+                    <div class="row">
+                        <div class="timeline">
+                            <div class="row">
+                                <!-- Timeline Item Starts -->
+                                <div class="timeline-item">
+                                    <div class="timeline-item-inner outer-shadow">
+                                        <i class="fas fa-chess-queen icon"></i>
+                                        <span>Nov, 2019</span>
+                                        <h3>4th at BUP ICT FEST 2018 Hackathon</h3>
+                                        <h4>Team Name: SUST Phantom</h4>
+                                        <p>Bangladesh University of Professionals (BUP)</p>
+                                    </div>
+                                </div>
+                                <!-- Timeline Item Ends -->
+                                <!-- Timeline Item Starts -->
+                                <div class="timeline-item">
+                                    <div class="timeline-item-inner outer-shadow">
+                                        <i class="fas fa-chess-queen icon"></i>
+                                        <span>Mar, 2016</span>
+                                        <h3>Higher Secondary Certificate General Grade Scholarship</h3>
+                                        <h4>Board of Intermediate and Secondary Education, Barisal</h4>
+                                        <h5>Higher Secondary Certificate Examination-2016 </h5>
+                                        <p>Government Syed Hatem Ali College, Barishal</p>
+                                    </div>
+                                </div>
+                                <!-- Timeline Item Ends -->
+                                <!-- Timeline Item Starts -->
+                                <div class="timeline-item">
+                                    <div class="timeline-item-inner outer-shadow">
+                                        <i class="fas fa-chess-queen icon"></i>
+                                        <span>Feb, 2014</span>
+                                        <h3>Secondary School Certificate Talent pool Scholarship</h3>
+                                        <h4>Board of Intermediate and Secondary Education, Barisal</h4>
+                                        <h5>Secondary School Certificate Examination-2014 </h5>
+                                        <p>Barishal Zilla School, Barishal</p>
+                                    </div>
+                                </div>
+                                <!-- Timeline Item Ends -->
+                                <!-- Timeline Item Starts -->
+                                <div class="timeline-item">
+                                    <div class="timeline-item-inner outer-shadow">
+                                        <i class="fas fa-chess-queen icon"></i>
+                                        <span>Nov, 2011</span>
+                                        <h3>Junior School Certificate Talent pool Scholarship</h3>
+                                        <h4>Board of Intermediate and Secondary Education, Barisal</h4>
+                                        <h5>Junior School Certificate Examination-2011 </h5>
+                                        <p>Barishal Zilla School, Barishal</p>
+                                    </div>
+                                </div>
+                                <!-- Timeline Item Ends -->
+                                <!-- Timeline Item Starts -->
+                                <div class="timeline-item">
+                                    <div class="timeline-item-inner outer-shadow">
+                                        <i class="fas fa-chess-queen icon"></i>
+                                        <span>Nov, 2008</span>
+                                        <h3>Primary Talent pool Scholarship</h3>
+                                        <h4>Directorate of Primary Education (DPE), Barishal</h4>
+                                        <h5>Primary Scholarship Examination</h5>
+                                        <p>Al-Helal Academy, Barishal</p>
+                                    </div>
+                                </div>
+                                <!-- Timeline Item Ends -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Achievement Ends -->
 
             <!--  Birthday Counter -->
             <div class="row leaves-before-fall-hide">
@@ -736,11 +802,6 @@
 
     <!-- Service Section Starts -->
     <section class="service-section section fx-section" id="services">
-        <div class="effect">
-            <div id='stars'></div>
-            <div id='stars2'></div>
-            <div id='stars3'></div>
-        </div>
         <div class="service-effect">
             <div class="area">
                 <ul class="circles">
@@ -876,11 +937,6 @@
 
     <!-- Project Section Starts -->
     <section class="portfolio-section section fx-section" id="portfolio">
-        <div class="effect">
-            <div id='stars'></div>
-            <div id='stars2'></div>
-            <div id='stars3'></div>
-        </div>
         <div class="effect-project">
             <div id="canvas_sketch"></div>
         </div>
@@ -1311,11 +1367,6 @@
 
     <!-- Testimonial Section Starts -->
     <section class="testimonial-section section fx-section" id="testimonial">
-        <div class="effect">
-            <div id='stars'></div>
-            <div id='stars2'></div>
-            <div id='stars3'></div>
-        </div>
         <canvas id="crowd-simulator"></canvas>
 
         <div class="container">
@@ -1332,8 +1383,7 @@
                             <div class="testi-item active">
                                 <i class="fas fa-quote-left left"></i>
                                 <i class="fas fa-quote-right right"></i>
-                                <p>xxxx xxxxxxxxxxxxxx xxxxxxxx xxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxx
-                                    xxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxx xxxxx xxxxx xxx.</p>
+                                <p>I have been working with him on number of products for a number of months that are very close to coming out. I can say that he has been very diligent in all their work. He has been fore with me in cost, hours and any sort of ideas that i have given them.</p>
                                 <div class="testi-profile">
                                     <img src="img/testimonial/testimonial-1.jpeg" alt="testimonial">
                                     <span>Gazi Yar Mohammed</span>
@@ -1345,8 +1395,7 @@
                             <div class="testi-item">
                                 <i class="fas fa-quote-left left"></i>
                                 <i class="fas fa-quote-right right"></i>
-                                <p>xxxx xxxxxxxxxxxxxx xxxxxxxx xxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxx
-                                    xxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxx xxxxx xxxxx xxx.</p>
+                                <p>He understands the business logic of our application and work dedicatedly accordingto our requirments. Which is super important. Overall, great skills, good communication, and happy with the results so far.</p>
                                 <div class="testi-profile">
                                     <img src="img/testimonial/testimonial-2.jpeg" alt="testimonial">
                                     <span>Zia Hassan Siddique</span>
@@ -1358,8 +1407,7 @@
                             <div class="testi-item">
                                 <i class="fas fa-quote-left left"></i>
                                 <i class="fas fa-quote-right right"></i>
-                                <p>xxxx xxxxxxxxxxxxxx xxxxxxxx xxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxx
-                                    xxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxx xxxxx xxxxx xxx.</p>
+                                <p>We are very satisfied with the work Shimanto has performed with our team, and we would like to highlight the high level of technical skills, coherence and efficiency of communication and flexibility in work with the team.</p>
                                 <div class="testi-profile">
                                     <img src="img/testimonial/testimonial-3.jpeg" alt="testimonial">
                                     <span>Mohammad Ullah Jitu</span>
@@ -1381,11 +1429,6 @@
 
     <!-- Contact Section Starts -->
     <section class="contact-section section fx-section" id="contact">
-        <div class="effect">
-            <div id='stars'></div>
-            <div id='stars2'></div>
-            <div id='stars3'></div>
-        </div>
         <div class="container">
             <div class="row mailan">
                 <div class="section-title">

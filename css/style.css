@@ -1790,6 +1790,11 @@ a.effect-shine:hover {
   margin: 0;
 }
 
+.about-section .timeline .timeline-item-inner h5 {
+  color: var(--text-black-600);
+  margin: 0;
+}
+
 .about-section .timeline .timeline-item-inner p {
   font-size: 14px;
   color: var(--text-black-600);
