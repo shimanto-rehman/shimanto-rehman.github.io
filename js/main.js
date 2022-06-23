@@ -618,4 +618,4 @@ window.onpopstate = function () {
         document.querySelector(hash).classList.add("active");
         document.querySelector(hash).classList.remove("hide");
     }
-}
+};
