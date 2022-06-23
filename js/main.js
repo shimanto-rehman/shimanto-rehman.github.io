@@ -605,3 +605,17 @@ btn.addEventListener("click", function () {
          `;
     }, 1100);
 });
+
+/* --------------------------------------------- Back Button Action to Change Section --------------------------------------- */ 
+
+window.onpopstate = function () {
+    if (location.hash !== "") {
+        const hash = location.hash;
+        // Deactivating existing active 'section'
+        document.querySelector(".section.active").classList.add("hide");
+        document.querySelector(".section.active").classList.remove("active");
+        // Activating new 'section'
+        document.querySelector(hash).classList.add("active");
+        document.querySelector(hash).classList.remove("hide");
+    }
+}
