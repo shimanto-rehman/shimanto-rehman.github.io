@@ -3951,12 +3951,6 @@ a.effect-shine:hover {
 
 /* ----------------------------------------------- Crowd Simulator ------------------------------------------------- */
 
-.crowd {
-  width: 100%;
-  height: 100%;
-  z-index: -199999999999999999999999999999999;
-}
-
 #crowd-simulator {
   width: 100% !important;
   height: 100% !important;
