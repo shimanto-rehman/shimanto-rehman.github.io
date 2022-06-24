@@ -303,6 +303,10 @@
         max-width: 510px;
     }
 
+    #crowd-simulator{
+        bottom: -23%;
+    }
+
     .nav-menu .portrait img{
         width: 140px;
         height: 140px;
@@ -430,6 +434,10 @@
         max-width: 280px;
     }
 
+    #crowd-simulator{
+        bottom: -40%;
+    }
+
     .nav-menu ul li a {
         font-size: 14px;
     }
@@ -523,9 +531,6 @@
         font-size: 14px;
         top: 49%;
         left: 50%;
-    }
-    #crowd-simulator{
-        bottom: -23%;
     }
 }
 
