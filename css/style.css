@@ -2099,7 +2099,7 @@ a.effect-shine:hover {
 .project-caption {
   text-align: center;
   text-transform: uppercase;
-  color: #f1faee;
+  color: var(--text-black-900);
   font-size: 30px;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
