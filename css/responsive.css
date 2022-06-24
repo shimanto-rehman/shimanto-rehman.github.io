@@ -327,6 +327,10 @@
         top: 50%;
         left: 50%;
     }
+
+    #crowd-simulator{
+        bottom: -23%;
+    }
 }
 
 @media(max-width: 540px) {
@@ -392,10 +396,6 @@
     #text1, #text2 {
         font-size: 30px;
     }
-
-    #crowd-simulator{
-        transform: scale(1.2);
-    }
 }
 
 @media(max-width: 420px) {
@@ -435,6 +435,10 @@
 
     .nav-menu ul li a {
         font-size: 14px;
+    }
+
+    #crowd-simulator{
+        bottom: -43%;
     }
 }
 
