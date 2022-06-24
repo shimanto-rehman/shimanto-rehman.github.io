@@ -567,4 +567,10 @@
         top: 20%;
         left: 20%;
     }
+    .about-section .timeline .timeline-item-inner h3{
+        font-size: 17px;
+    }
+    .about-section .timeline .timeline-item-inner h4{
+        font-size: 15px;
+    }
 }
