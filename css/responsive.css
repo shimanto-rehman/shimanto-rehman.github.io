@@ -363,13 +363,6 @@
         max-width: 420px;
     }
 
-    .letter-image {
-        transform: scale(0.7);
-        text-align: center;
-        top: 20%;
-        left: 26%;
-    }
-
     .contact-section .mailan {
         padding-bottom: 0px;
     }
@@ -492,11 +485,6 @@
         padding: 5px 15px;
     }
 
-    .letter-image {
-        top: 20%;
-        left: 23%;
-    }
-
     .about-section .birthday .title-ctd h1 {
         font-size: 16px;
     }
@@ -535,10 +523,6 @@
 }
 
 @media(max-width: 340px) {
-    .letter-image {
-        top: 20%;
-        left: 21%;
-    }
 }
 
 @media(max-width: 320px) {
@@ -566,11 +550,6 @@
     .nav-menu .copyright-text {
         font-size: 9px;
         left: -40px;
-    }
-
-    .letter-image {
-        top: 20%;
-        left: 20%;
     }
     .about-section .timeline .timeline-item-inner h3{
         font-size: 17px;
