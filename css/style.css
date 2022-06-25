@@ -1602,7 +1602,7 @@ a.effect-shine:hover {
     z-index: -1;
 }
 
-.about-section .spotify .player {
+.player {
     display: flex;
     justify-content: center;
 }
