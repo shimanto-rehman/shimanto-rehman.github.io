@@ -2819,7 +2819,7 @@ a.effect-shine:hover {
 }
 
 .shadow {
-    width: 100%;
+    width: 400px;
     height: 30px;
     position: absolute;
     transform: translateY(500%);
