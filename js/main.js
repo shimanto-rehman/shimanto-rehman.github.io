@@ -117,10 +117,10 @@ function type() {
     text = '';
 }
 
-document.getElementById("about-type").onclick = function () {
+document.getElementById("about-type").onclick = function() {
     type();
 };
-document.getElementById("about-type1").onclick = function () {
+document.getElementById("about-type1").onclick = function() {
     type();
 };
 
@@ -207,14 +207,14 @@ document.getElementById("about-type1").onclick = function () {
     }
     // Next Slide
     nextBtn.addEventListener("click", () => {
-        if (slideIndex === screenshots.length - 1) {
-            slideIndex = 0;
-        } else {
-            slideIndex++;
-        }
-        popupSlideshow();
-    })
-    // Prev Slide
+            if (slideIndex === screenshots.length - 1) {
+                slideIndex = 0;
+            } else {
+                slideIndex++;
+            }
+            popupSlideshow();
+        })
+        // Prev Slide
     prevBtn.addEventListener("click", () => {
         if (slideIndex === 0) {
             slideIndex = screenshots.length - 1;
@@ -281,9 +281,9 @@ document.getElementById("about-type1").onclick = function () {
 
     // Set Width of All Slides
     slides.forEach((slide) => {
-        slide.style.width = slideWidth + "px";
-    })
-    // Set Width of slideContainer
+            slide.style.width = slideWidth + "px";
+        })
+        // Set Width of slideContainer
     sliderContainer.style.width = slideWidth * slides.length + "px";
 
     nextBtn.addEventListener("click", () => {
@@ -334,7 +334,7 @@ document.getElementById("about-type1").onclick = function () {
 var moveForce = 14; // max popup movement in pixels
 var rotateForce = 14; // max popup rotation in deg
 
-$(document).mousemove(function (e) {
+$(document).mousemove(function(e) {
     var docX = $(document).width();
     var docY = $(document).height();
 
@@ -502,7 +502,7 @@ class Mesh {
         this.stage.scene.add(this.mesh);
     }
 
-    _diffuse() { }
+    _diffuse() {}
 
     _render() {
         this.uniforms.time.value += 0.01;
@@ -563,12 +563,12 @@ class Mesh {
 })();
 
 /* ----------------- Welcome Message && Home Page Type Writing Animation After website elementes are loaded ----------------------*/
-window.onload = function () {
-    setTimeout(appeardiv, 1000);
-    setTimeout(appearhometext, 500);
-    setTimeout(disappearDiv, 8000);
-}
-//Div will appeare after 1 sec the window is loaded fully
+window.onload = function() {
+        setTimeout(appeardiv, 1000);
+        setTimeout(appearhometext, 500);
+        setTimeout(disappearDiv, 8000);
+    }
+    //Div will appeare after 1 sec the window is loaded fully
 function appeardiv() {
     document.getElementById('welcome-msg').style.display = "block";
 }
@@ -589,12 +589,12 @@ window.addEventListener("load", () => {
     document.querySelector(".preloader").classList.add("fade-out");
     setTimeout(() => {
         document.querySelector(".preloader").style.display = "none";
-    }, 600)
+    }, 300)
 })
 
 /* ----------------------------------------- Submit Button & animations ---------------------------------------*/
 let btn = document.getElementById('btn');
-btn.addEventListener("click", function () {
+btn.addEventListener("click", function() {
     btn.setAttribute('class', 'btn-1 process');
     btn.innerHTML = 'Processing';
     setTimeout(() => {
@@ -606,9 +606,9 @@ btn.addEventListener("click", function () {
     }, 1100);
 });
 
-/* --------------------------------------------- Back Button Action to Change Section --------------------------------------- */ 
+/* --------------------------------------------- Back Button Action to Change Section --------------------------------------- */
 
-window.onpopstate = function () {
+window.onpopstate = function() {
     if (location.hash !== "") {
         const hash = location.hash;
         // Deactivating existing active 'section'
