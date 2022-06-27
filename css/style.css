@@ -1602,6 +1602,10 @@ a.effect-shine:hover {
     z-index: -1;
 }
 
+.spotify {
+    padding: 57px 0px 7px;
+}
+
 .player {
     display: flex;
     justify-content: center;
