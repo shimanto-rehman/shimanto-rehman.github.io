@@ -339,6 +339,11 @@
         height: 30px;
         width: 30px;
     }
+    .style-btn .whatsapp {
+        height: 30px;
+        width: 30px;
+        font-size: 16px;
+    }
     .style-btn .hamburger-btn span {
         display: block;
         height: 2px;
