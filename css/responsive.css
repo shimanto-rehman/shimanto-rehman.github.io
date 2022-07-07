@@ -452,8 +452,6 @@
     }
 }
 
-@media(max-width: 340px) {}
-
 @media(max-width: 320px) {
     .home-section .home-img .img-box {
         max-width: 210px;
