@@ -104,7 +104,7 @@ function bodyScrollingToggole() {
 let textLength = 0;
 
 function type() {
-    let text = 'Hello ! My name is Shimanto Rehman. Im a 4th year undergraduate student at SUST, Sylhet pursuing BSc in Computer Science and Engineering. Im a passionate learner whos always willing to learn and work across technologies and domains. I love to explore new technologies and leverage them to solve real-life problems. Apart from that I also love to guide and mentor newbies. Im currently into Web Development and working on my Data Structures and Algorithms.';
+    let text = 'Hello ! My name is Shimanto Rehman. Im a 4th year undergraduate student at SUST, Sylhet. Pursuing BSc in Computer Science and Engineering. Im a passionate learner whos always willing to learn and work across technologies and domains. I love to explore new technologies and leverage them to solve real-life problems. Apart from that I also love to guide and mentor newbies. Im currently into Web Development and working on my Data Structures and Algorithms.';
     let textChar = text.charAt(textLength++);
     let paragraph = document.getElementById("typed");
     let charElement = document.createTextNode(textChar);
