@@ -563,12 +563,12 @@ class Mesh {
 })();
 
 /* ----------------- Welcome Message && Home Page Type Writing Animation After website elementes are loaded ----------------------*/
-$(document).ready(function() {
-    setTimeout(appeardiv, 700);
-    setTimeout(appearhometext, 500);
-    setTimeout(disappearDiv, 7400);
-});
-//Div will appeare after 1 sec the window is loaded fully
+window.onload = function() {
+        setTimeout(appeardiv, 700);
+        setTimeout(appearhometext, 500);
+        setTimeout(disappearDiv, 7400);
+    }
+    //Div will appeare after 1 sec the window is loaded fully
 function appeardiv() {
     document.getElementById('welcome-msg').style.display = "block";
 }
@@ -584,11 +584,11 @@ function disappearDiv() {
 
 /* ------------------------------------------ Pre-Loader ---------------------------------------------- */
 
-$(document).ready(function() {
+window.addEventListener("load", () => {
     document.querySelector(".preloader").classList.add("fade-out");
     setTimeout(() => {
         document.querySelector(".preloader").style.display = "none";
-    }, 150)
+    }, 170)
 });
 
 /* ----------------------------------------- Submit Button & animations ---------------------------------------*/
