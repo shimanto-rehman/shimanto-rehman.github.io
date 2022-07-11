@@ -1,11 +1,5 @@
 /*------------------------------------ Fonts ----------------------------------------*/
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Caveat&family=Press+Start+2P&family=Yuji+Boku&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
-@import url("http://fonts.cdnfonts.com/css/harry-potter");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 /* ------------------------------------ Global Style ------------------------------------- */
 
@@ -722,8 +716,8 @@ img {
 }
 
 .menu-branding .portrait img {
-    width: 250px;
-    height: 250px;
+    width: 97%;
+    height: 100%;
     position: relative;
     top: -20px !important;
     border-radius: 50%;
@@ -1260,6 +1254,7 @@ a.effect-shine:hover {
 }
 
 .home-section .home-img .img-box img {
+    height: 100%;
     width: 100%;
     border-radius: 50%;
     border: 10px solid transparent;
@@ -1389,6 +1384,7 @@ a.effect-shine:hover {
 }
 
 .about-section .about-img .img-box img {
+    height: 100%;
     width: 100%;
     border: 10px solid transparent;
     border-radius: 50%;
@@ -1431,7 +1427,7 @@ a.effect-shine:hover {
 
 .about-section .about-info p {
     font-size: 16px;
-    font-family: "Courier New", "Lucida Console", monospace;
+    font-family: "Courier New", monospace;
     font-weight: 700;
     line-height: 26px;
     margin-bottom: 15px;
@@ -2008,7 +2004,7 @@ a.effect-shine:hover {
 .roller #rolltext {
     position: absolute;
     top: 0;
-    font-family: "harry potter", sans-serif;
+    font-family: 'Henny Penny', cursive;
     animation: slide 5s infinite;
 }
 
