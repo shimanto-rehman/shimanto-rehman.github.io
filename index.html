@@ -8,6 +8,89 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Shimanto Rehman</title>
     <link rel="icon" href="img/favicon.webp">
+    <!-- Fonts Load -->
+    <style>
+        /* henny-penny-regular - latin */
+        
+        @font-face {
+            font-family: "Henny Penny";
+            font-style: normal;
+            font-weight: 400;
+            src: url("fonts/henny-penny-v17-latin-regular.eot");
+            /* IE9 Compat Modes */
+            src: local(""), url("fonts/henny-penny-v17-latin-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+            url("fonts/henny-penny-v17-latin-regular.woff2") format("woff2"), /* Super Modern Browsers */
+            url("fonts/henny-penny-v17-latin-regular.woff") format("woff"), /* Modern Browsers */
+            url("fonts/henny-penny-v17-latin-regular.ttf") format("truetype"), /* Safari, Android, iOS */
+            url("fonts/henny-penny-v17-latin-regular.svg#HennyPenny") format("svg");
+            /* Legacy iOS */
+            font-display: swap;
+        }
+        /* raleway-regular - latin */
+        
+        @font-face {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 400;
+            src: url("fonts/raleway-v27-latin-regular.eot");
+            /* IE9 Compat Modes */
+            src: local(""), url("fonts/raleway-v27-latin-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+            url("fonts/raleway-v27-latin-regular.woff2") format("woff2"), /* Super Modern Browsers */
+            url("fonts/raleway-v27-latin-regular.woff") format("woff"), /* Modern Browsers */
+            url("fonts/raleway-v27-latin-regular.ttf") format("truetype"), /* Safari, Android, iOS */
+            url("fonts/raleway-v27-latin-regular.svg#Raleway") format("svg");
+            /* Legacy iOS */
+            font-display: swap;
+        }
+        /* raleway-500 - latin */
+        
+        @font-face {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 500;
+            src: url("fonts/raleway-v27-latin-500.eot");
+            /* IE9 Compat Modes */
+            src: local(""), url("fonts/raleway-v27-latin-500.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+            url("fonts/raleway-v27-latin-500.woff2") format("woff2"), /* Super Modern Browsers */
+            url("fonts/raleway-v27-latin-500.woff") format("woff"), /* Modern Browsers */
+            url("fonts/raleway-v27-latin-500.ttf") format("truetype"), /* Safari, Android, iOS */
+            url("fonts/raleway-v27-latin-500.svg#Raleway") format("svg");
+            /* Legacy iOS */
+            font-display: swap;
+        }
+        /* raleway-600 - latin */
+        
+        @font-face {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 600;
+            src: url("fonts/raleway-v27-latin-600.eot");
+            /* IE9 Compat Modes */
+            src: local(""), url("fonts/raleway-v27-latin-600.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+            url("fonts/raleway-v27-latin-600.woff2") format("woff2"), /* Super Modern Browsers */
+            url("fonts/raleway-v27-latin-600.woff") format("woff"), /* Modern Browsers */
+            url("fonts/raleway-v27-latin-600.ttf") format("truetype"), /* Safari, Android, iOS */
+            url("fonts/raleway-v27-latin-600.svg#Raleway") format("svg");
+            /* Legacy iOS */
+            font-display: swap;
+        }
+        /* raleway-700 - latin */
+        
+        @font-face {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 700;
+            src: url("fonts/raleway-v27-latin-700.eot");
+            /* IE9 Compat Modes */
+            src: local(""), url("fonts/raleway-v27-latin-700.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+            url("fonts/raleway-v27-latin-700.woff2") format("woff2"), /* Super Modern Browsers */
+            url("fonts/raleway-v27-latin-700.woff") format("woff"), /* Modern Browsers */
+            url("fonts/raleway-v27-latin-700.ttf") format("truetype"), /* Safari, Android, iOS */
+            url("fonts/raleway-v27-latin-700.svg#Raleway") format("svg");
+            /* Legacy iOS */
+            font-display: swap;
+        }
+    </style>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <!-- main css -->
@@ -337,7 +420,7 @@
                     <div class="moving-zone">
                         <div class="popup">
                             <div class="img-box pulse-image">
-                                <img src="img/profile-pic.webp" fetchpriority="high" class="outer-shadow" alt="profile-pic">
+                                <img src="img/profile-pic.webp" height="432px" width="432px" fetchpriority="high" class="outer-shadow" alt="profile-pic">
                             </div>
                         </div>
                     </div>
@@ -1441,19 +1524,19 @@
                         <div class="row">
                             <div class="w-50">
                                 <div class="input-group outer-shadow hover-in-shadow">
-                                    <input type="text" name="Name" id="name" placeholder="Name" class="input-control" required>
+                                    <input type="text" name="Name" placeholder="Name" class="input-control" required>
                                 </div>
                                 <div class="input-group outer-shadow hover-in-shadow">
-                                    <input type="email" name="emailaddress" id="Email" placeholder="Email" class="input-control" required>
+                                    <input type="email" name="emailaddress" placeholder="Email" class="input-control" required>
                                 </div>
                                 <div class="input-group outer-shadow hover-in-shadow">
-                                    <input type="text" name="Subject" placeholder="Subject" id="subject" class="input-control">
+                                    <input type="text" name="Subject" placeholder="Subject" class="input-control">
                                 </div>
                                 <div class="input-group outer-shadow hover-in-shadow">
-                                    <input type="hidden" name="_subject" id="subject" value="New Mail from shimanto.me">
+                                    <input type="hidden" name="_subject" value="New Mail from shimanto.me">
                                 </div>
                                 <div class="input-group outer-shadow hover-in-shadow">
-                                    <input type="hidden" name="_next" value="https://shimanto-rehman.github.io/">
+                                    <input type="hidden" name="_next" value="https://shimanto.me">
                                 </div>
                                 <div class="input-group outer-shadow hover-in-shadow">
                                     <input type="hidden" name="_captcha" value="false">
