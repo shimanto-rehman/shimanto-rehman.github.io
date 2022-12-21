@@ -1376,6 +1376,7 @@ a.effect-shine:hover {
     padding: 15px;
     border-radius: 50%;
     position: relative;
+    text-align: center;
     top: -40px;
 }
 
