@@ -1229,7 +1229,7 @@ a.effect-shine:hover {
 }
 
 .home-section .home-img .img-box {
-    max-width: 450px;
+    max-width: fit-content;
     display: block;
     margin: auto;
     border-radius: 50%;
