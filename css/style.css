@@ -717,6 +717,8 @@ img {
     height: 100%;
     position: relative;
     border-radius: 50%;
+    display: flex;
+    margin: auto;
 }
 
 .nav-options {
@@ -1252,8 +1254,6 @@ a.effect-shine:hover {
 
 .home-section .home-img .img-box img {
     border-radius: 50%;
-    height: auto;
-    width: auto;
     border: 10px solid transparent;
     transform: translateZ(15px);
 }
@@ -1382,8 +1382,6 @@ a.effect-shine:hover {
 }
 
 .about-section .about-img .img-box img {
-    height: 100%;
-    width: 100%;
     border: 10px solid transparent;
     border-radius: 50%;
 }
