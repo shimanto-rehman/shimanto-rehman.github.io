@@ -200,6 +200,10 @@
     .home-section .home-img .img-box {
         max-width: 260px;
     }
+    .menu-branding .portrait img {
+        width: 80%;
+        height: auto;
+    }
     .home-section .home-text h2 {
         font-size: 34px;
     }
