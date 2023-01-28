@@ -1199,7 +1199,7 @@ a.effect-shine:hover {
 .home-section .home-text span.title-word-2,
 .home-section .home-text span.title-word-3 {
     font-weight: 700;
-    font-family: Augustina Regular;
+    font-family: Augustina Regular !important;
 }
 
 .typewriter {
