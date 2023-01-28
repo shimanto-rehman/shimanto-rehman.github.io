@@ -1184,6 +1184,7 @@ a.effect-shine:hover {
 
 .home-section .home-text h2 {
     font-size: 55px;
+    padding-left: 4px;
     margin: 0;
 }
 
@@ -1198,6 +1199,7 @@ a.effect-shine:hover {
 .home-section .home-text span.title-word-2,
 .home-section .home-text span.title-word-3 {
     font-weight: 700;
+    font-family: Augustina Regular;
 }
 
 .typewriter {
