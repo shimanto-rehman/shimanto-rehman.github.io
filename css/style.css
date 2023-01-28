@@ -1204,10 +1204,12 @@ a.effect-shine:hover {
 
 .typewriter {
     display: inline-block;
+    font-family: Augustina Regular !important;
 }
 
 .typewriter h2 {
     overflow: hidden;
+    font-family: Augustina Regular !important;
     /* Ensures the content is not revealed until the animation */
     border-right: 0.15em solid orange;
     /* The typwriter cursor */
