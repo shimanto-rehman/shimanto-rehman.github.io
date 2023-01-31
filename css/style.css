@@ -1199,17 +1199,14 @@ a.effect-shine:hover {
 .home-section .home-text span.title-word-2,
 .home-section .home-text span.title-word-3 {
     font-weight: 700;
-    font-family: Augustina Regular !important;
 }
 
 .typewriter {
     display: inline-block;
-    font-family: Augustina Regular !important;
 }
 
 .typewriter h2 {
     overflow: hidden;
-    font-family: Augustina Regular !important;
     /* Ensures the content is not revealed until the animation */
     border-right: 0.15em solid orange;
     /* The typwriter cursor */
@@ -1217,7 +1214,7 @@ a.effect-shine:hover {
     /* Keeps the content on a single line */
     margin: 0 auto;
     /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0.15em;
+    letter-spacing: 0.14em;
     /* Adjust as needed */
     animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
 }
