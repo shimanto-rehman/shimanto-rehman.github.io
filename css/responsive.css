@@ -205,7 +205,7 @@
         height: auto;
     }
     .home-section .home-text h2 {
-        font-size: 34px;
+        font-size: 27px;
     }
     .home-section .home-text h1 {
         font-size: 18px;
@@ -380,13 +380,13 @@
         max-width: 230px;
     }
     .home-section .home-text h2 {
-        font-size: 28px;
+        font-size: 24px;
     }
     .home-section .home-text h1 {
-        font-size: 15px;
+        font-size: 14px;
     }
     .btn-1 {
-        font-size: 14px;
+        font-size: 13px;
     }
     .effect-6 {
         top: -10%;
@@ -457,10 +457,10 @@
         max-width: 210px;
     }
     .home-section .home-text h2 {
-        font-size: 27px;
+        font-size: 23px;
     }
     .home-section .home-text h1 {
-        font-size: 14px;
+        font-size: 13px;
     }
     .btn-1 {
         font-size: 12px;
