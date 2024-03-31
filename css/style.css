@@ -1221,10 +1221,29 @@ a.effect-shine:hover {
 
 .home-section .home-text h1 {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 650;
     color: var(--text-black-600);
     margin: 0;
     text-transform: capitalize;
+}
+
+.home-section .home-text .punchline {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: capitalize;
+    padding-top: 12px;
+    animation: color-animation 3s linear infinite;
+}
+
+.home-section .home-text .punchline-2 {
+    font-size: 13px;
+    font-weight: 550;
+    font-style: italic;
+    color: var(--text-black-600);
+    text-transform: capitalize;
+    padding-top: 5px;
+    margin: 0;
 }
 
 .home-section .home-text .btn-1 {

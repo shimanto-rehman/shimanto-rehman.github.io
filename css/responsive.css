@@ -49,6 +49,13 @@
     .home-section .home-text h1 {
         font-size: 17px;
     }
+    .home-section .home-text .punchline {
+        font-size: 13px;
+    }
+
+    .home-section .home-text .punchline-2 {
+        font-size: 11px;
+    }
     .effect-3 {
         margin-left: -60px;
     }
@@ -208,7 +215,7 @@
         font-size: 27px;
     }
     .home-section .home-text h1 {
-        font-size: 18px;
+        font-size: 16px;
     }
     .social-tab .fab {
         font-size: 1rem;
@@ -297,6 +304,12 @@
     }
     #container-about-title {
         padding-bottom: 100px;
+    }
+    .home-section .home-text .punchline {
+        font-size: 11px;
+    }
+    .home-section .home-text .punchline-2 {
+        font-size: 9px;
     }
 }
 
