@@ -46,7 +46,7 @@
     .home-section .home-text h2 {
         font-size: 37px;
     }
-    .home-section .home-text h1 {
+    .home-section .home-text .designation {
         font-size: 17px;
     }
     .home-section .home-text .punchline {
@@ -214,7 +214,7 @@
     .home-section .home-text h2 {
         font-size: 27px;
     }
-    .home-section .home-text h1 {
+    .home-section .home-text .designation {
         font-size: 16px;
     }
     .social-tab .fab {
@@ -395,7 +395,7 @@
     .home-section .home-text h2 {
         font-size: 24px;
     }
-    .home-section .home-text h1 {
+    .home-section .home-text .designation {
         font-size: 14px;
     }
     .btn-1 {
@@ -472,7 +472,7 @@
     .home-section .home-text h2 {
         font-size: 23px;
     }
-    .home-section .home-text h1 {
+    .home-section .home-text .designation {
         font-size: 13px;
     }
     .btn-1 {
