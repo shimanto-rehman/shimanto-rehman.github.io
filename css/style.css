@@ -1226,6 +1226,51 @@ a.effect-shine:hover {
     text-transform: capitalize;
 }
 
+.home-section .home-text .designation-list {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 20px;
+}
+
+.home-section .home-text .designation-list span.desig-item {
+    position: absolute;
+    transform-origin: 50% 70%;
+  }
+  
+  span.desig-item:nth-child(1) {
+    animation: flipUp 16s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0s both infinite;
+  }
+  
+  span.desig-item:nth-child(2) {
+    animation: flipUp 16s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4s both infinite;
+  }
+
+  span.desig-item:nth-child(3) {
+    animation: flipUp 16s cubic-bezier(0.68, -0.55, 0.26, 1.55) 8s both infinite;
+  }
+
+  span.desig-item:nth-child(4) {
+    animation: flipUp 16s cubic-bezier(0.68, -0.55, 0.26, 1.55) 12s both infinite;
+  }
+  
+  @keyframes flipUp {
+    0% {
+     opacity: 0;
+     margin-top: -100px;
+    }
+    20%{
+      opacity: 1;
+      margin-top: 0;
+      transform: rotateX(0deg);
+    }
+    50%, 100% {
+      opacity: 0;
+      margin-top: 0;
+      transform: rotateX(90deg);
+    }
+  } 
+
 .home-section .home-text .punchline {
     font-size: 14px;
     font-weight: 600;

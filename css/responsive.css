@@ -49,6 +49,9 @@
     .home-section .home-text .designation {
         font-size: 17px;
     }
+    .home-section .home-text .designation-list {
+        justify-content: center;
+    }
     .home-section .home-text .punchline {
         font-size: 13px;
     }
