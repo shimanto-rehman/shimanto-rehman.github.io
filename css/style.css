@@ -1257,7 +1257,7 @@ a.effect-shine:hover {
   @keyframes flipUp {
     0% {
      opacity: 0;
-     margin-top: -100px;
+     margin-top: -30px;
     }
     20%{
       opacity: 1;
