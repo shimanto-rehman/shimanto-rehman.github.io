@@ -1198,7 +1198,7 @@ a.effect-shine:hover {
 }
 
 .home-section .home-text .typewriter h2 span {
-    font-family: "Agustina";
+    font-family: "Agustina" !important;
 }
 
 .typewriter {
