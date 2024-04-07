@@ -1,3 +1,16 @@
+/* ----------------------------------------- Home Name Typing Writing ------------------------------------------*/
+
+document.addEventListener('DOMContentLoaded', function() {
+    applyfont();
+});
+
+function applyfont() {
+    var all = document.getElementsByClassName('title-font');
+    for (var i = 0; i < all.length; i++) {
+    all[i].style.fontFamily = 'Agustina';
+    }
+}
+
 /* ----------------------------------------- Navigation Menu ----------------------------------------- */
 (() => {
 
@@ -563,19 +576,10 @@ class Mesh {
 })();
 
 /* ----------------- Welcome Message && Home Page Type Writing Animation After website elementes are loaded ----------------------*/
-
-function applyfont() {
-    var all = document.getElementsByClassName('title-font');
-    for (var i = 0; i < all.length; i++) {
-    all[i].style.fontFamily = 'Agustina';
-    }
-}
-
 window.onload = function() {
         setTimeout(appeardiv, 700);
         setTimeout(appearhometext, 500);
         setTimeout(disappearDiv, 7400);
-        applyfont();
     }
 
 //Div will appeare after 1 sec the window is loaded fully
