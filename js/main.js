@@ -563,6 +563,14 @@ class Mesh {
 })();
 
 /* ----------------- Welcome Message && Home Page Type Writing Animation After website elementes are loaded ----------------------*/
+
+function applyfont() {
+    var all = document.getElementsByClassName('title-font');
+    for (var i = 0; i < all.length; i++) {
+    all[i].style.fontFamily = 'Agustina';
+    }
+}
+
 window.onload = function() {
         setTimeout(appeardiv, 700);
         setTimeout(appearhometext, 500);
@@ -577,13 +585,6 @@ function appeardiv() {
 //Effect will start after 0.5 seconds of 'window is fully loaded'
 function appearhometext() {
     document.getElementById('home-typing-effect').style.display = "block";
-}
-
-function applyfont() {
-    var all = document.getElementsByClassName('title-font');
-    for (var i = 0; i < all.length; i++) {
-    all[i].style.fontFamily = 'Agustina';
-    }
 }
 
 //Div will Disappeare After 8 sec
