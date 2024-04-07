@@ -1689,12 +1689,35 @@ a.effect-shine:hover {
     top: 18px;
 }
 
+.institute-logo {
+    max-width: 90px;
+    height: 70px;
+    width: 70px;
+    background-color: var(--bg-black-50);
+    text-align: center;
+    border: 1px solid var(--bg-black-100);
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    color: var(--skin-color);
+    position: absolute;
+    top: 45%;
+}
+
 .about-section .timeline .timeline-item:nth-child(odd) .icon {
     right: -70px;
 }
 
+.about-section .timeline .timeline-item:nth-child(odd) img {
+    right: -85px;
+}
+
 .about-section .timeline .timeline-item:nth-child(even) .icon {
     left: -70px;
+}
+
+.about-section .timeline .timeline-item:nth-child(even) img {
+    left: -85px;
 }
 
 .about-section .timeline .timeline-item-inner span {
