@@ -575,7 +575,12 @@ function appeardiv() {
 //Effect will start after 0.5 seconds of 'window is fully loaded'
 function appearhometext() {
     document.getElementById('home-typing-effect').style.display = "block";
+    var all = document.getElementsByClassName('title-font');
+    for (var i = 0; i < all.length; i++) {
+    all[i].style.fontFamily = 'Agustina';
+    }
 }
+
 //Div will Disappeare After 8 sec
 function disappearDiv() {
     document.getElementById("welcome-msg").style.display = " none";
