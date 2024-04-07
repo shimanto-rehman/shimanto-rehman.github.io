@@ -1189,6 +1189,7 @@ a.effect-shine:hover {
 }
 
 .home-section .home-text span {
+    font-weight: 700;
     animation: color-animation 3s linear infinite;
 }
 
@@ -1196,9 +1197,8 @@ a.effect-shine:hover {
     font-weight: 650;
 }
 
-.home-section .home-text span.title-word-2,
-.home-section .home-text span.title-word-3 {
-    font-weight: 700;
+.home-section .home-text .typewriter h2 span {
+    font-family: "Agustina";
 }
 
 .typewriter {
