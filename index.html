@@ -123,6 +123,17 @@
             font-display: swap;
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            applyfont();
+        });
+        function applyfont() {
+            var all = document.getElementsByClassName('title-font');
+            for (var i = 0; i < all.length; i++) {
+            all[i].style.fontFamily = 'Agustina';
+            }
+        }
+    </script>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" font-display="swap" />
     <!-- main css -->
