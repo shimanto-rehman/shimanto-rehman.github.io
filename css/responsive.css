@@ -121,6 +121,20 @@
     .about-section .timeline .timeline-item:nth-child(even) .icon {
         left: -60px;
     }
+
+    .institute-logo {
+        height: 60px;
+        width: 60px;
+    }
+
+    .about-section .timeline .timeline-item:nth-child(odd) img {
+        right: auto;
+        left: -70px;
+    }
+    .about-section .timeline .timeline-item:nth-child(even) img {
+        left: -60px;
+    }
+
     .contact-section .input-group .input-control ::after {
         background-color: transparent;
     }
