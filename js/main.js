@@ -568,13 +568,20 @@ window.onload = function() {
         setTimeout(appearhometext, 500);
         setTimeout(disappearDiv, 7400);
     }
-    //Div will appeare after 1 sec the window is loaded fully
+
+document.addEventListener('DOMContentLoaded', function() {
+    applyfont();
+});
+//Div will appeare after 1 sec the window is loaded fully
 function appeardiv() {
     document.getElementById('welcome-msg').style.display = "block";
 }
 //Effect will start after 0.5 seconds of 'window is fully loaded'
 function appearhometext() {
     document.getElementById('home-typing-effect').style.display = "block";
+}
+
+function applyfont() {
     var all = document.getElementsByClassName('title-font');
     for (var i = 0; i < all.length; i++) {
     all[i].style.fontFamily = 'Agustina';
