@@ -1,16 +1,3 @@
-/* ----------------------------------------- Home Name Typing Writing ------------------------------------------*/
-
-document.addEventListener('DOMContentLoaded', function() {
-    applyfont();
-});
-
-function applyfont() {
-    var all = document.getElementsByClassName('title-font');
-    for (var i = 0; i < all.length; i++) {
-    all[i].style.fontFamily = 'Agustina';
-    }
-}
-
 /* ----------------------------------------- Navigation Menu ----------------------------------------- */
 (() => {
 
@@ -591,6 +578,13 @@ function appearhometext() {
     document.getElementById('home-typing-effect').style.display = "block";
 }
 
+function applyfont() {
+    var all = document.getElementsByClassName('title-font');
+    for (var i = 0; i < all.length; i++) {
+    all[i].style.fontFamily = 'Agustina';
+    }
+}
+
 //Div will Disappeare After 8 sec
 function disappearDiv() {
     document.getElementById("welcome-msg").style.display = " none";
@@ -604,6 +598,8 @@ window.addEventListener("load", () => {
     setTimeout(() => {
         document.querySelector(".preloader").style.display = "none";
     }, 170)
+    //Home Text Name Font Applying
+    applyfont();
 });
 
 /* ----------------------------------------- Submit Button & animations ---------------------------------------*/
