@@ -267,6 +267,111 @@ document.getElementById("about-type1").onclick = function() {
 })();
 
 
+/* ------------------------------------------ Certificate filter & popup ---------------------------------------------- */
+(() => {
+    const certificateItemsContainer = document.querySelector(".certificate-items"),
+        certificateItems = document.querySelectorAll(".certificate-item"),
+        popup = document.querySelector(".certificate-popup"),
+        prevBtn = popup.querySelector(".pp-prev"),
+        nextBtn = popup.querySelector(".pp-next"),
+        closeBtn = popup.querySelector(".pp-close"),
+        certificateDetailsContainer = popup.querySelector(".pp-details"),
+        certificateDetailsBtn = popup.querySelector(".pp-certificate-details-btn");
+    let itemIndex, slideIndex, screenshots;
+
+    certificateItemsContainer.addEventListener("click", (event) => {
+        if (event.target.closest(".certificate-item-inner")) {
+            const certificateItem = event.target.closest(".certificate-item-inner").parentElement;
+            itemIndex = Array.from(certificateItem.parentElement.children).indexOf(certificateItem);
+            screenshots = certificateItems[itemIndex].querySelector(".certificate-item-img img").getAttribute("data-screenshots").split(",");
+            if (screenshots.length === 1) {
+                prevBtn.style.display = "none";
+                nextBtn.style.display = "none";
+            } else {
+                prevBtn.style.display = "block";
+                nextBtn.style.display = "block";
+            }
+            slideIndex = 0;
+            popupToggle();
+            popupSlideshow();
+            popupDetails();
+        }
+    })
+
+    closeBtn.addEventListener("click", () => {
+        popupToggle();
+        if (certificateDetailsContainer.classList.contains("active")) {
+            popupDetailsToggle();
+        }
+    })
+
+    function popupToggle() {
+        popup.classList.toggle("open");
+        bodyScrollingToggole();
+    }
+
+    function popupSlideshow() {
+        const imgSrc = screenshots[slideIndex];
+        const popupImg = popup.querySelector(".pp-img");
+        popup.querySelector(".pp-loader").classList.add("active");
+        popupImg.src = imgSrc;
+        popupImg.onload = () => {
+            popup.querySelector(".pp-loader").classList.remove("active");
+        }
+        popup.querySelector(".pp-counter").innerHTML = (slideIndex + 1) + " of " + screenshots.length;
+    }
+
+    nextBtn.addEventListener("click", () => {
+        if (slideIndex === screenshots.length - 1) {
+            slideIndex = 0;
+        } else {
+            slideIndex++;
+        }
+        popupSlideshow();
+    })
+
+    prevBtn.addEventListener("click", () => {
+        if (slideIndex === 0) {
+            slideIndex = screenshots.length - 1;
+        } else {
+            slideIndex--;
+        }
+        popupSlideshow();
+    })
+
+    function popupDetails() {
+        if (!certificateItems[itemIndex].querySelector(".certificate-item-details")) {
+            certificateDetailsBtn.style.display = "none";
+            return;
+        }
+
+        certificateDetailsBtn.style.display = "block";
+        const details = certificateItems[itemIndex].querySelector(".certificate-item-details").innerHTML;
+        popup.querySelector(".pp-certificate-details").innerHTML = details;
+        const title = certificateItems[itemIndex].querySelector(".certificate-item-title").innerHTML;
+        popup.querySelector(".pp-title h2").innerHTML = title;
+    }
+
+    certificateDetailsBtn.addEventListener("click", () => {
+        popupDetailsToggle();
+    })
+
+    function popupDetailsToggle() {
+        if (certificateDetailsContainer.classList.contains("active")) {
+            certificateDetailsBtn.querySelector("i").classList.remove("fa-minus");
+            certificateDetailsBtn.querySelector("i").classList.add("fa-plus");
+            certificateDetailsContainer.classList.remove("active");
+            certificateDetailsContainer.style.maxHeight = 0 + "px";
+        } else {
+            certificateDetailsBtn.querySelector("i").classList.remove("fa-plus");
+            certificateDetailsBtn.querySelector("i").classList.add("fa-minus");
+            certificateDetailsContainer.classList.add("active");
+            certificateDetailsContainer.style.maxHeight = certificateDetailsContainer.scrollHeight + "px";
+            popup.scrollTo(0, certificateDetailsContainer.offsetTop);
+        }
+    }
+})();
+
 
 /* ------------------------------------ Testimonial Slider ------------------------------------------ */
 

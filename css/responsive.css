@@ -11,6 +11,7 @@
 }
 
 @media (max-width: 991px) {
+    .certificate-section .certificate-item,
     .portfolio-section .portfolio-item,
     .service-section .service-item {
         flex: 0 0 50%;
@@ -21,6 +22,8 @@
 }
 
 @media(max-width: 958px) {
+    .certificate-popup .description,
+    .certificate-popup .info,
     .portfolio-popup .description,
     .portfolio-popup .info,
     .about-section .skills .skill-item,
@@ -208,6 +211,9 @@
     .clock__seconds {
         font-size: 15px;
     }
+    .certificate-logo img{
+        height: 130px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -217,6 +223,9 @@
     #extra-cap p {
         line-height: 1rem;
         width: 300px;
+    }
+    .certificate-logo img{
+        height: 120px;
     }
 }
 
@@ -249,23 +258,31 @@
     }
     .contact-section .w-50,
     .contact-section .contact-item,
+    .certificate-section .certificate-item,
     .portfolio-section .portfolio-item,
     .service-section .service-item {
         flex: 0 0 100%;
         max-width: 95%;
         margin: auto;
     }
+    .certificate-popup .pp-title h2,
     .portfolio-popup .pp-title h2 {
         font-size: 18px;
     }
+    .certificate-popup .pp-title p,
     .portfolio-popup .pp-title p {
         font-size: 12px;
     }
+    .certificate-popup .pp-certificate-details h3,
     .portfolio-popup .pp-project-details h3 {
         font-size: 18px;
     }
+    .certificate-popup .info ul li,
     .portfolio-popup .info ul li {
         font-size: 12px;
+    }
+    .certificate-logo img{
+        height: 110px;
     }
     .nav-menu ul li a {
         font-size: 25px;

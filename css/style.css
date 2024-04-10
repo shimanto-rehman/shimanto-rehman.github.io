@@ -2038,8 +2038,26 @@ a.effect-shine:hover {
     }
 }
 
+/*------------------------------------ Certificate Section ------------------------------------- */
 
-/*------------------------------------ Portfolio Section ------------------------------------- */
+.certificate-section .certificate-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.certificate-section .certificate-item {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.certificate-section .certificate-item-inner:hover .certificate-item-img img {
+    transform: scale(1.1) translateY(-35px);
+}
 
 
 /*------------------------------ Project Caption -------------------------------*/
@@ -2108,12 +2126,13 @@ a.effect-shine:hover {
 
 
 /*------------------------------ Project Caption Ends --------------------------*/
-
+.certificate-section,
 .portfolio-section {
     padding: 80px 0 80px;
     min-height: 100vh;
 }
 
+.certificate-section .section-title,
 .portfolio-section .section-title {
     margin-bottom: 40px;
 }
@@ -2155,15 +2174,18 @@ a.effect-shine:hover {
     flex-wrap: wrap;
 }
 
+.certificate-section .certificate-item.hide,
 .portfolio-section .portfolio-item.hide {
     display: none;
 }
 
+.certificate-section .certificate-item.show,
 .portfolio-section .portfolio-item.show {
     display: block;
     animation: fadeInTop 0.5s ease;
 }
 
+.certificate-section .certificate-item-inner,
 .portfolio-section .portfolio-item-inner {
     padding: 15px;
     border-radius: 10px;
@@ -2171,10 +2193,12 @@ a.effect-shine:hover {
     width: 100%;
 }
 
+.certificate-section .certificate-item-img,
 .portfolio-section .portfolio-item-img {
     position: relative;
 }
 
+.certificate-section .certificate-item-img img,
 .portfolio-section .portfolio-item-img img {
     border-radius: 5px;
     width: 100%;
@@ -2185,6 +2209,7 @@ a.effect-shine:hover {
     transform: translateY(-25px);
 }
 
+.certificate-section .certificate-item-inner .view-certificate,
 .portfolio-section .portfolio-item-inner .view-project {
     text-transform: capitalize;
     font-size: 16px;
@@ -2199,11 +2224,13 @@ a.effect-shine:hover {
     opacity: 0;
 }
 
+.certificate-section .certificate-item-inner:hover .view-certificate,
 .portfolio-section .portfolio-item-inner:hover .view-project {
     transform: translateY(0px);
     opacity: 1;
 }
 
+.certificate-section .certificate-item-inner p,
 .portfolio-section .portfolio-item-inner p {
     font-size: 16px;
     margin: 10px 0 0;
@@ -2211,6 +2238,7 @@ a.effect-shine:hover {
     text-transform: capitalize;
 }
 
+.certificate-section .certificate-item-details,
 .portfolio-section .portfolio-item-details {
     display: none;
 }
@@ -2282,7 +2310,7 @@ a.effect-shine:hover {
 
 
 /*------------------------------------ Portfolio Popup ------------------------------------- */
-
+.certificate-popup,
 .portfolio-popup {
     background-color: var(--bg-black-50);
     position: fixed;
@@ -2297,11 +2325,13 @@ a.effect-shine:hover {
     transition: all 0.3s ease;
 }
 
+.certificate-popup.open,
 .portfolio-popup.open {
     visibility: visible;
     opacity: 1;
 }
 
+.certificate-popup .pp-loader,
 .portfolio-popup .pp-loader {
     position: fixed;
     left: 0;
@@ -2317,11 +2347,13 @@ a.effect-shine:hover {
     opacity: 0;
 }
 
+.certificate-popup .pp-loader.active,
 .portfolio-popup .pp-loader.active {
     visibility: visible;
     opacity: 1;
 }
 
+.certificate-popup .pp-loader div,
 .portfolio-popup .pp-loader div {
     height: 40px;
     width: 40px;
@@ -2331,6 +2363,7 @@ a.effect-shine:hover {
     animation: spin 2s linear infinite;
 }
 
+.certificate-popup .pp-details,
 .portfolio-popup .pp-details {
     max-width: 1350px;
     width: calc(85% + 35px);
@@ -2341,18 +2374,22 @@ a.effect-shine:hover {
     transition: all 0.5s ease;
 }
 
+.certificate-popup .pp-details.active,
 .portfolio-popup .pp-details.active {
     opacity: 1;
 }
 
+.certificate-popup .pp-details-inner,
 .portfolio-popup .pp-details-inner {
     padding: 30px 0;
 }
 
+.certificate-popup .pp-title,
 .portfolio-popup .pp-title {
     padding: 0 15px;
 }
 
+.certificate-popup .pp-title h2,
 .portfolio-popup .pp-title h2 {
     font-size: 26px;
     color: var(--text-black-900);
@@ -2360,6 +2397,7 @@ a.effect-shine:hover {
     font-weight: 600;
 }
 
+.certificate-popup .pp-title p,
 .portfolio-popup .pp-title p {
     font-size: 14px;
     font-weight: 600;
@@ -2369,11 +2407,13 @@ a.effect-shine:hover {
     padding-bottom: 10px;
 }
 
+.certificate-popup .pp-title p span,
 .portfolio-popup .pp-title p span {
     font-weight: 400;
     text-transform: capitalize;
 }
 
+.certificate-popup .pp-certificate-details h3,
 .portfolio-popup .pp-project-details h3 {
     font-size: 20px;
     font-weight: 600;
@@ -2382,12 +2422,14 @@ a.effect-shine:hover {
     text-transform: capitalize;
 }
 
+.certificate-popup .description,
 .portfolio-popup .description {
     flex: 0 0 65%;
     max-width: 65%;
     padding: 0 15px;
 }
 
+.certificate-popup .description p,
 .portfolio-popup .description p {
     font-size: 14px;
     color: var(--text-black-600);
@@ -2395,12 +2437,14 @@ a.effect-shine:hover {
     margin: 0;
 }
 
+.certificate-popup .info,
 .portfolio-popup .info {
     flex: 0 0 35%;
     max-width: 35%;
     padding: 0 15px;
 }
 
+.certificate-popup .info ul li,
 .portfolio-popup .info ul li {
     display: block;
     margin-bottom: 10px;
@@ -2409,18 +2453,22 @@ a.effect-shine:hover {
     font-size: 14px;
 }
 
+.certificate-popup .info ul li span,
 .portfolio-popup .info ul li span {
     font-weight: 400;
 }
 
+.certificate-popup .info ul li a,
 .portfolio-popup .info ul li a {
     color: var(--skin-color);
 }
 
+.certificate-popup .info ul li:last-child,
 .portfolio-popup .info ul li:last-child {
     margin-bottom: 0;
 }
 
+.certificate-popup .separator,
 .portfolio-popup .separator {
     height: 1px;
     width: 100%;
@@ -2428,6 +2476,7 @@ a.effect-shine:hover {
     background-color: var(--bg-black-100);
 }
 
+.certificate-popup .pp-img ,
 .portfolio-popup .pp-img {
     max-width: 100%;
     width: auto;
@@ -2436,6 +2485,7 @@ a.effect-shine:hover {
     border-radius: 10px;
 }
 
+.certificate-popup .pp-main,
 .portfolio-popup .pp-main {
     min-height: 100vh;
     max-width: 1350px;
@@ -2446,11 +2496,13 @@ a.effect-shine:hover {
     justify-content: center;
 }
 
+.certificate-popup .pp-main-inner,
 .portfolio-popup .pp-main-inner {
     padding: 70px 0 50px;
     position: relative;
 }
 
+.certificate-popup .pp-certificate-details-btn,
 .portfolio-popup .pp-project-details-btn {
     position: absolute;
     left: 0;
@@ -2466,14 +2518,17 @@ a.effect-shine:hover {
     transition: all 0.3s ease;
 }
 
+.certificate-popup .pp-certificate-details-btn i,
 .portfolio-popup .pp-project-details-btn i {
     margin-left: 4px;
 }
 
+.certificate-popup .pp-certificate-details-btn:after,
 .portfolio-popup .pp-project-details-btn:after {
     border-radius: 30px;
 }
 
+.certificate-popup .pp-close,
 .portfolio-popup .pp-close {
     position: absolute;
     right: 0;
@@ -2489,10 +2544,12 @@ a.effect-shine:hover {
     transition: all 0.3s ease;
 }
 
+.certificate-popup .pp-close:after,
 .portfolio-popup .pp-close:after {
     border-radius: 50%;
 }
 
+.certificate-popup .pp-counter,
 .portfolio-popup .pp-counter {
     position: absolute;
     right: 0;
@@ -2503,6 +2560,8 @@ a.effect-shine:hover {
     color: var(--text-black-600);
 }
 
+.certificate-popup .pp-prev,
+.certificate-popup .pp-next,
 .portfolio-popup .pp-prev,
 .portfolio-popup .pp-next {
     position: fixed;
@@ -2518,24 +2577,31 @@ a.effect-shine:hover {
     opacity: 0.5;
 }
 
+.certificate-popup .pp-prev:hover,
+.certificate-popup .pp-next:hover,
 .portfolio-popup .pp-prev:hover,
 .portfolio-popup .pp-next:hover {
     opacity: 1;
 }
 
+.certificate-popup .pp-prev i,
+.certificate-popup .pp-next i,
 .portfolio-popup .pp-prev i,
 .portfolio-popup .pp-next i {
     line-height: 40px;
 }
 
+.certificate-popup .pp-prev i,
 .portfolio-popup .pp-prev i {
     transform: rotate(180deg);
 }
 
+.certificate-popup .pp-prev,
 .portfolio-popup .pp-prev {
     left: 15px;
 }
 
+.certificate-popup .pp-next,
 .portfolio-popup .pp-next {
     right: 15px;
 }
