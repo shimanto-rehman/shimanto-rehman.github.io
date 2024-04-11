@@ -344,13 +344,35 @@ document.getElementById("about-type1").onclick = function() {
             certificateDetailsBtn.style.display = "none";
             return;
         }
-
+    
         certificateDetailsBtn.style.display = "block";
-        const details = certificateItems[itemIndex].querySelector(".certificate-item-details").innerHTML;
+        const detailsContainer = certificateItems[itemIndex].querySelector(".certificate-item-details");
+        const details = detailsContainer.innerHTML;
         popup.querySelector(".pp-certificate-details").innerHTML = details;
         const title = certificateItems[itemIndex].querySelector(".certificate-item-title").innerHTML;
         popup.querySelector(".pp-title h2").innerHTML = title;
-    }
+    
+        let certificateUrl = certificateItems[itemIndex].querySelector(".certificate-item-details").getAttribute("data-certificate-url");
+    
+        // If data-certificate-url is not available, try to extract URL from anchor tag
+        if (!certificateUrl) {
+            const anchorTag = detailsContainer.querySelector("a");
+            if (anchorTag) {
+                certificateUrl = anchorTag.getAttribute("href");
+            }
+        }
+    
+        // Check if certificate URL exists
+        if (!certificateUrl) {
+            certificateDetailsBtn.style.display = "none";
+            return; // End function execution
+        }
+    
+        // Set the certificate URL for the button
+        const viewDetailsBtn = popup.querySelector(".certificate-btn a");
+        viewDetailsBtn.href = certificateUrl;
+        certificateDetailsBtn.style.display = "block";
+    }    
 
     certificateDetailsBtn.addEventListener("click", () => {
         popupDetailsToggle();

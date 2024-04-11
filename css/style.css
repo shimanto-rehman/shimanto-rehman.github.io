@@ -2059,6 +2059,12 @@ a.effect-shine:hover {
     transform: scale(1.1) translateY(-35px);
 }
 
+.certificate-btn {
+    bottom: 0px;
+    margin-top: 17px;
+    display: flex;
+    justify-content: center;
+}
 
 /*------------------------------ Project Caption -------------------------------*/
 
