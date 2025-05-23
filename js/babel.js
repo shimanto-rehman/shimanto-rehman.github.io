@@ -142,7 +142,7 @@ animate();
 
 /*---------------------------------------------- Crowd Simulation ------------------------------------------------*/
 const config = {
-    src: 'https://res.cloudinary.com/dyibv0ne2/image/upload/v1712485869/img/peeps-sheet.webp',
+    src: 'https://res.cloudinary.com/shimanto-rehman/image/upload/v1712485869/img/peeps-sheet.webp',
     rows: 15,
     cols: 7
 }
